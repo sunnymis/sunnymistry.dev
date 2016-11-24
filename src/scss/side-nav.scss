@@ -1,0 +1,76 @@
+.side-nav {
+    flex: 0 0 25%;
+    //height: 100vh;
+    border: 1px solid black;
+    //position: fixed;
+
+    .sidenav-container {
+        position: fixed;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url("../img/bg.jpg");
+        background-size: 100% 100%;
+        width: 25%;
+        height: 100vh;
+    }
+    .sunny-image {
+        width: 150px;
+        height: 150px;
+        img {
+            border-radius: 50%;
+        }
+        margin: 20px auto;
+    }
+    .sunny-title {
+        display: block;
+        height: 50px;
+        text-align: center;
+        color: white;
+        font-size: 40px;
+
+    }
+
+    .side-nav-list {
+        list-style: none;
+        text-align: center;
+        line-height: 30px;
+        width: 100%;
+        padding: 0;
+        font-size: 25px;
+        font-weight: 400;
+        li {
+            margin-bottom: 20px;
+            span {
+                color: white;
+                &:hover {
+                    cursor: pointer;
+                    color: dodgerblue;
+                }
+            }
+        }
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 50%;
+            height: 5px;
+            border-bottom: 2px solid #696969;
+        }
+    }
+    .social-media-list {
+        text-align: justify;
+        min-width: 50px;
+        padding: 0 50px;
+        li {
+            display: inline-block;
+        }
+        img {
+            height: 30px;
+            width: 30px;
+        }
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+        }
+    }
+
+}
+
