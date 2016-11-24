@@ -1,16 +1,12 @@
 .side-nav {
-    flex: 0 0 25%;
-    //height: 100vh;
+    width: 25%;
+    height: 100vh;
+    display: inline-block;
     border: 1px solid black;
-    //position: fixed;
+    position: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url("../img/bg.jpg");
+    background-size: 100% 100%;
 
-    .sidenav-container {
-        position: fixed;
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url("../img/bg.jpg");
-        background-size: 100% 100%;
-        width: 25%;
-        height: 100vh;
-    }
     .sunny-image {
         width: 150px;
         height: 150px;
