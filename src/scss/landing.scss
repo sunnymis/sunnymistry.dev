@@ -8,8 +8,10 @@
     .intro {
         position: relative;
         height: 450px;
-        border: 1px solid red;
-        background-color: #9E9E9E;
+        background: #bdc3c7; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #bdc3c7 , #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #bdc3c7 , #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
         .intro-text {
             width: 50%;
             position: absolute;
@@ -46,7 +48,7 @@
                 padding-top: 20px;
                 margin: 0 auto;
                 height: 5px;
-                border-bottom: 2px solid #696969;
+                border-bottom: 1px solid rgb(232, 232, 232);
             }
         }
 
@@ -54,10 +56,93 @@
             text-align: center;
             .project {
                 display: inline-block;
-                height: 200px;
-                width: 200px;
-                border: 1px solid black;
-                margin: 0 100px;
+                height: 300px;
+                width: 300px;
+                border: 1px solid rgb(232, 232, 232);
+                margin: 0 20px;
+                border-radius: 15px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+                &:hover {
+                    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                }
+            }
+            #project1 {
+                background-image: url('../img/stack.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                position: relative;
+
+                &:after {
+                    content:'Stack OnTop';
+                    line-height: 200px;
+                    font-size: 25px;
+                    color: #fff;
+                    position:absolute;
+                    width:100%; height:100%;
+                    top:0; left:0;
+                    background:rgba(0,0,0,0.8);
+                    opacity:0;
+                    transition: all 0.5s;
+                    -webkit-transition: all 0.5s;
+                    border-radius: 15px;
+                }
+                &:hover:after {
+                    opacity: 1;
+                }
+            }
+
+            #project2 {
+                background-image: url('../img/binger1.png');
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: relative;
+
+                &:after {
+                    content:'Binger';
+                    line-height: 200px;
+                    font-size: 25px;
+                    color: #fff;
+                    position:absolute;
+                    width:100%; height:100%;
+                    top:0; left:0;
+                    background:rgba(0,0,0,0.8);
+                    opacity:0;
+                    transition: all 0.5s;
+                    -webkit-transition: all 0.5s;
+                    border-radius: 15px;
+                }
+                &:hover:after {
+                    opacity: 1;
+                }
+            }
+
+            #project3 {
+                background-image: url('../img/swoleciety1.png');
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: relative;
+
+                &:after {
+                    content:'Swoleciety';
+                    line-height: 200px;
+                    font-size: 25px;
+                    color: #fff;
+                    position:absolute;
+                    width:100%; height:100%;
+                    top:0; left:0;
+                    background:rgba(0,0,0,0.8);
+                    opacity:0;
+                    transition: all 0.5s;
+                    -webkit-transition: all 0.5s;
+                    border-radius: 15px;
+                }
+                &:hover:after {
+                    opacity: 1;
+                }
+
             }
         }
     }
