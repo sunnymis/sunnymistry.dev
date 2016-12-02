@@ -315,18 +315,20 @@ body {
   position: fixed;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg.jpg");
   background-size: 100% 100%; }
-  .side-nav .sunny-image {
-    width: 150px;
-    height: 150px;
-    margin: 20px auto; }
-    .side-nav .sunny-image img {
-      border-radius: 50%; }
   .side-nav .sunny-title {
     display: block;
-    height: 50px;
+    height: 200px;
     text-align: center;
     color: white;
-    font-size: 40px; }
+    font-size: 100px;
+    position: relative;
+    top: 75px;
+    line-height: 80px; }
+    .side-nav .sunny-title #sunny-fname {
+      display: block;
+      margin-bottom: 50px; }
+    .side-nav .sunny-title #sunny-lname {
+      display: block; }
   .side-nav .side-nav-list {
     list-style: none;
     text-align: center;
@@ -334,7 +336,8 @@ body {
     width: 100%;
     padding: 0;
     font-size: 25px;
-    font-weight: 400; }
+    font-weight: 400;
+    margin-top: 150px; }
     .side-nav .side-nav-list li {
       margin-bottom: 20px; }
       .side-nav .side-nav-list li span {
