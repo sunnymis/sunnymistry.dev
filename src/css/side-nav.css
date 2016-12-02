@@ -7,11 +7,12 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg.jpg");
   background-size: 100% 100%; }
   .side-nav .sunny-title {
+    font-family: 'Raleway', sans-serif;
     display: block;
     height: 200px;
     text-align: center;
     color: white;
-    font-size: 100px;
+    font-size: 80px;
     position: relative;
     top: 75px;
     line-height: 80px; }
@@ -40,7 +41,6 @@
       content: '';
       display: inline-block;
       width: 50%;
-      height: 5px;
       border-bottom: 2px solid #696969; }
   .side-nav .social-media-list {
     text-align: justify;

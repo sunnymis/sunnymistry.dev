@@ -5,20 +5,63 @@
     display: inline-block;
     position: relative;
 
-    .sunny-landing-image {
-        height: 300px;
-        width: 100%;
+    .intro {
+        position: relative;
+        height: 450px;
         border: 1px solid red;
-        img {
-            height: 500px;
+        background-color: #9E9E9E;
+        .intro-text {
+            width: 50%;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            color: white;
+            font-size: 30px;
+            line-height: 50px;
+            font-family: 'Valera Round', sans-serif;
+        }
+        .sunny-landing-image {
+            width: 30%;
+            height: 100%;
+            position: absolute;
+            right: 50px;
+            background-image: url('../img/sunnyNoBG.png');
+            background-size: auto 500px;
+            background-repeat: no-repeat;
+            img {
+                overflow: hidden;
+                height: 500px;
+            }
         }
     }
-    .intro-text {
-        width: 50%;
-        position: absolute;
-        top: 100px;
-        right: 50px;
+
+    .recent-projects {
+        p {
+            font-size: 35px;
+            text-align: center;
+            &:after {
+                content: '';
+                display: block;
+                width: 33%;
+                padding-top: 20px;
+                margin: 0 auto;
+                height: 5px;
+                border-bottom: 2px solid #696969;
+            }
+        }
+
+        .project-list {
+            text-align: center;
+            .project {
+                display: inline-block;
+                height: 200px;
+                width: 200px;
+                border: 1px solid black;
+                margin: 0 100px;
+            }
+        }
     }
+
     .landing-footer {
         position: absolute;
         width: 100%;
