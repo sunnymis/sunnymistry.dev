@@ -2,3 +2,14 @@ body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
   font-weight: 500; }
+
+.content-container {
+  height: 100vh;
+  width: 75%;
+  float: right;
+  display: inline-block;
+  position: relative; }
+
+@font-face {
+  font-family: 'Simplifica';
+  src: url("../fonts/simplifica.ttf") format("truetype"); }

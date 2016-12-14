@@ -6,7 +6,8 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/stock2.png");
   background-size: auto 100%; }
   .side-nav .sunny-title {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Simplifica', sans-serif;
+    letter-spacing: 15px;
     display: block;
     height: 200px;
     text-align: center;
