@@ -1,49 +1,128 @@
-.timeline {
-    position: relative;
-    padding: 2em 0;
-    margin-top: 2em;
-    margin-bottom: 2em;
+#about-container {
+    background-color: #009688;
+    margin-top: -20px;
 
-
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 18px;
-        height: 100%;
-        width: 4px;
-        background: #d7e4ed;
+    .about-header {
+        padding: 50px;
+        text-align: center;
+        h1 {
+            font-size: 3em;
+        }
     }
 
-    .timeline-section {
+
+    .timeline {
         position: relative;
-        margin: 2em 0;
+        padding: 0 1px 100px 1px;
+        list-style-type: none;
+        margin: 0;
+        background-color: #009688;
 
-        &:after {
+        /* This styles the verticle bar */
+        &:before {
             content: '';
-            display: table;
-            clear: both;
-        }
-
-        .timeline-img {
             position: absolute;
             top: 0;
-            left: 0;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+            left: 50%;
+            height: 100%;
+            width: 5px;
+            background: #000000;
+            z-index: 5;
+        }
 
-            img {
+        li {
+            position: relative;
+            padding: 3em 0;
+            width: 1px;
+            margin: 0 auto;
+
+            &:after {
+                content: '';
                 display: block;
-                width: 24px;
-                height: 24px;
-                position: relative;
-                left: 50%;
-                top: 50%;
-                margin-left: -12px;
-                margin-top: -12px;
+                height: 0;
+                padding-bottom: 100px;
+                clear: both;
             }
+
+            .timeline-section {
+                position: absolute;
+                height: 220px;
+                width: 400px;
+                border: 1px solid #e8e8e8;
+                border-radius: 15px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+                background-color: white;
+                padding-bottom: 20px;
+                box-sizing: border-box;;
+
+                /* This styles the circles in the timeline bar*/
+                &:before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    background: white;
+                    border-radius: 50%;
+                    border: 3px solid black;
+                    z-index: 10;
+                }
+
+                .content-card {
+
+                    .content-card-title {
+                        text-align: center;
+                        font-weight: bold;
+                        &:after {
+                            content: '';
+                            display: block;
+                            border-bottom: 1px solid #E8E8E8;
+                            width: 75%;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .content-card-date {
+                        position: relative;
+                        top: -15px;
+                        left: 10px;
+                        font-style: italic;
+                        text-align: center;
+                    }
+
+                    .content-card-skills-list {
+                        padding-left: 10px;
+                        span {
+                            border: 1px solid #e8e8e8;
+                            background-color: #e8e8e8;
+                            padding: 5px;
+                            box-sizing: border-box;
+                            margin-right: 10px;
+                            &:hover {
+                                background-color: #939393;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .timeline-section.right {
+                left: 100px;
+                &:before {
+                    top: 45%;
+                    left: -116px;
+                }
+            }
+
+            .timeline-section.left {
+                right: 100px;
+                &:before {
+                    position: absolute;
+                    top: 45%;
+                    right: -120px;
+                }
+            }
+
         }
     }
 }

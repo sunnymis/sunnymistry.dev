@@ -1,40 +1,95 @@
-.timeline {
-  position: relative;
-  padding: 2em 0;
-  margin-top: 2em;
-  margin-bottom: 2em; }
-  .timeline:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 18px;
-    height: 100%;
-    width: 4px;
-    background: #d7e4ed; }
-  .timeline .timeline-section {
+#about-container {
+  background-color: #009688;
+  margin-top: -20px; }
+  #about-container .about-header {
+    padding: 50px;
+    text-align: center; }
+    #about-container .about-header h1 {
+      font-size: 3em; }
+  #about-container .timeline {
     position: relative;
-    margin: 2em 0; }
-    .timeline .timeline-section:after {
+    padding: 0 1px 100px 1px;
+    list-style-type: none;
+    margin: 0;
+    background-color: #009688;
+    /* This styles the verticle bar */ }
+    #about-container .timeline:before {
       content: '';
-      display: table;
-      clear: both; }
-    .timeline .timeline-section .timeline-img {
       position: absolute;
       top: 0;
-      left: 0;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05); }
-      .timeline .timeline-section .timeline-img img {
+      left: 50%;
+      height: 100%;
+      width: 5px;
+      background: #000000;
+      z-index: 5; }
+    #about-container .timeline li {
+      position: relative;
+      padding: 3em 0;
+      width: 1px;
+      margin: 0 auto; }
+      #about-container .timeline li:after {
+        content: '';
         display: block;
-        width: 24px;
-        height: 24px;
-        position: relative;
-        left: 50%;
-        top: 50%;
-        margin-left: -12px;
-        margin-top: -12px; }
+        height: 0;
+        padding-bottom: 100px;
+        clear: both; }
+      #about-container .timeline li .timeline-section {
+        position: absolute;
+        height: 220px;
+        width: 400px;
+        border: 1px solid #e8e8e8;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        background-color: white;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+        /* This styles the circles in the timeline bar*/ }
+        #about-container .timeline li .timeline-section:before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 30px;
+          height: 30px;
+          background: white;
+          border-radius: 50%;
+          border: 3px solid black;
+          z-index: 10; }
+        #about-container .timeline li .timeline-section .content-card .content-card-title {
+          text-align: center;
+          font-weight: bold; }
+          #about-container .timeline li .timeline-section .content-card .content-card-title:after {
+            content: '';
+            display: block;
+            border-bottom: 1px solid #E8E8E8;
+            width: 75%;
+            margin: 0 auto; }
+        #about-container .timeline li .timeline-section .content-card .content-card-date {
+          position: relative;
+          top: -15px;
+          left: 10px;
+          font-style: italic;
+          text-align: center; }
+        #about-container .timeline li .timeline-section .content-card .content-card-skills-list {
+          padding-left: 10px; }
+          #about-container .timeline li .timeline-section .content-card .content-card-skills-list span {
+            border: 1px solid #e8e8e8;
+            background-color: #e8e8e8;
+            padding: 5px;
+            box-sizing: border-box;
+            margin-right: 10px; }
+            #about-container .timeline li .timeline-section .content-card .content-card-skills-list span:hover {
+              background-color: #939393; }
+      #about-container .timeline li .timeline-section.right {
+        left: 100px; }
+        #about-container .timeline li .timeline-section.right:before {
+          top: 45%;
+          left: -116px; }
+      #about-container .timeline li .timeline-section.left {
+        right: 100px; }
+        #about-container .timeline li .timeline-section.left:before {
+          position: absolute;
+          top: 45%;
+          right: -120px; }
 
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 html {
@@ -306,9 +361,9 @@ nav a:hover {
   height: 450px;
   background: #bdc3c7;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #bdc3c7, #2c3e50);
+  background: -webkit-linear-gradient(to left, #bdc3c7, #00695C);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #bdc3c7, #2c3e50);
+  background: linear-gradient(to left, #bdc3c7, #00695C);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   .landing .intro .intro-text {
     width: 50%;
@@ -456,7 +511,9 @@ body {
   width: 75%;
   float: right;
   display: inline-block;
-  position: relative; }
+  position: relative;
+  margin: 0;
+  padding: 0; }
 
 @font-face {
   font-family: 'Simplifica';
