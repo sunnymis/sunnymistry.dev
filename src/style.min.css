@@ -1,3 +1,41 @@
+.timeline {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+  .timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 100%;
+    width: 4px;
+    background: #d7e4ed; }
+  .timeline .timeline-section {
+    position: relative;
+    margin: 2em 0; }
+    .timeline .timeline-section:after {
+      content: '';
+      display: table;
+      clear: both; }
+    .timeline .timeline-section .timeline-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05); }
+      .timeline .timeline-section .timeline-img img {
+        display: block;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        margin-left: -12px;
+        margin-top: -12px; }
+
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 html {
   color: #222;
@@ -263,36 +301,142 @@ nav a:hover {
   h3 {
     page-break-after: avoid; } }
 
-.landing {
-  height: 100vh;
-  width: 75%;
-  float: right;
-  display: inline-block;
-  position: relative; }
-  .landing .sunny-landing-image {
-    height: 300px;
-    width: 100%;
-    border: 1px solid red; }
-    .landing .sunny-landing-image img {
-      height: 500px; }
-  .landing .intro-text {
+.landing .intro {
+  position: relative;
+  height: 450px;
+  background: #bdc3c7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #bdc3c7, #2c3e50);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #bdc3c7, #2c3e50);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .landing .intro .intro-text {
     width: 50%;
     position: absolute;
     top: 100px;
-    right: 50px; }
-  .landing .landing-footer {
+    left: 100px;
+    color: white;
+    font-size: 30px;
+    line-height: 50px;
+    font-family: 'Valera Round', sans-serif; }
+  .landing .intro .sunny-landing-image {
+    width: 30%;
+    height: 100%;
     position: absolute;
-    width: 100%;
-    bottom: 100px; }
-    .landing .landing-footer p {
-      text-align: center;
-      font-size: 20px; }
-    .landing .landing-footer img {
-      height: 50px;
-      width: 100%;
+    right: 50px;
+    background-image: url("../img/sunnyNoBG.png");
+    background-size: auto 500px;
+    background-repeat: no-repeat; }
+    .landing .intro .sunny-landing-image img {
+      overflow: hidden;
+      height: 500px; }
+
+.landing .recent-projects p {
+  font-size: 35px;
+  text-align: center; }
+  .landing .recent-projects p:after {
+    content: '';
+    display: block;
+    width: 33%;
+    padding-top: 20px;
+    margin: 0 auto;
+    height: 5px;
+    border-bottom: 1px solid #e8e8e8; }
+
+.landing .recent-projects .project-list {
+  text-align: center; }
+  .landing .recent-projects .project-list .project {
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    border: 1px solid #e8e8e8;
+    margin: 0 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+    .landing .recent-projects .project-list .project:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .landing .recent-projects .project-list #project1 {
+    background-image: url("../img/stack.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; }
+    .landing .recent-projects .project-list #project1:after {
+      content: 'Stack OnTop';
+      line-height: 200px;
+      font-size: 25px;
+      color: #fff;
       position: absolute;
-      margin: 0 auto;
-      animation: arrow-bounce 2s infinite linear; }
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.8);
+      opacity: 0;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      border-radius: 15px; }
+    .landing .recent-projects .project-list #project1:hover:after {
+      opacity: 1; }
+  .landing .recent-projects .project-list #project2 {
+    background-image: url("../img/binger1.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; }
+    .landing .recent-projects .project-list #project2:after {
+      content: 'Binger';
+      line-height: 200px;
+      font-size: 25px;
+      color: #fff;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.8);
+      opacity: 0;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      border-radius: 15px; }
+    .landing .recent-projects .project-list #project2:hover:after {
+      opacity: 1; }
+  .landing .recent-projects .project-list #project3 {
+    background-image: url("../img/swoleciety1.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; }
+    .landing .recent-projects .project-list #project3:after {
+      content: 'Swoleciety';
+      line-height: 200px;
+      font-size: 25px;
+      color: #fff;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.8);
+      opacity: 0;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      border-radius: 15px; }
+    .landing .recent-projects .project-list #project3:hover:after {
+      opacity: 1; }
+
+.landing .landing-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 100px; }
+  .landing .landing-footer p {
+    text-align: center;
+    font-size: 20px; }
+  .landing .landing-footer img {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    animation: arrow-bounce 2s infinite linear; }
 
 @keyframes arrow-bounce {
   0% {
@@ -307,26 +451,40 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 500; }
 
+.content-container {
+  height: 100vh;
+  width: 75%;
+  float: right;
+  display: inline-block;
+  position: relative; }
+
+@font-face {
+  font-family: 'Simplifica';
+  src: url("../fonts/simplifica.ttf") format("truetype"); }
+
 .side-nav {
   width: 25%;
   height: 100vh;
   display: inline-block;
-  border: 1px solid black;
   position: fixed;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg.jpg");
-  background-size: 100% 100%; }
-  .side-nav .sunny-image {
-    width: 150px;
-    height: 150px;
-    margin: 20px auto; }
-    .side-nav .sunny-image img {
-      border-radius: 50%; }
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/stock2.png");
+  background-size: auto 100%; }
   .side-nav .sunny-title {
+    font-family: 'Simplifica', sans-serif;
+    letter-spacing: 15px;
     display: block;
-    height: 50px;
+    height: 200px;
     text-align: center;
     color: white;
-    font-size: 40px; }
+    font-size: 80px;
+    position: relative;
+    top: 75px;
+    line-height: 80px; }
+    .side-nav .sunny-title #sunny-fname {
+      display: block;
+      margin-bottom: 50px; }
+    .side-nav .sunny-title #sunny-lname {
+      display: block; }
   .side-nav .side-nav-list {
     list-style: none;
     text-align: center;
@@ -334,7 +492,8 @@ body {
     width: 100%;
     padding: 0;
     font-size: 25px;
-    font-weight: 400; }
+    font-weight: 400;
+    margin-top: 150px; }
     .side-nav .side-nav-list li {
       margin-bottom: 20px; }
       .side-nav .side-nav-list li span {
@@ -346,7 +505,6 @@ body {
       content: '';
       display: inline-block;
       width: 50%;
-      height: 5px;
       border-bottom: 2px solid #696969; }
   .side-nav .social-media-list {
     text-align: justify;
