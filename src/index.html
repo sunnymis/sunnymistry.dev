@@ -25,12 +25,12 @@
 
 
 <div class="side-nav">
-    <div class="sunny-title">
+    <div class="sunny-title" onclick="onTitleClick()">
         <span id="sunny-fname">SUNNY</span>
         <span id="sunny-lname">MISTRY</span>
     </div>
     <ul class="side-nav-list">
-        <li><span>About</span></li>
+        <li><span onclick="onAboutClick()">About</span></li>
         <li><span>Portfolio</span></li>
         <li><span>Stuff</span></li>
         <li><span>Contact</span></li>
@@ -43,15 +43,16 @@
         <li><img src="icons/svg/gmail.svg"/></li>
     </ul>
 </div>
-<div class="content-container">
-    <div class="timeline">
+<div id="content-container" class="content-container">
+    <div id="about-container" class="timeline" hidden>
         <div class="timeline-section">
+            <h1>hello world</h1>
             <div class="timeline-img cd-picture">
                 <img src="img/cd-icon-picture.svg" alt="Picture">
             </div>
         </div>
     </div>
-    <div class="landing">
+    <div id="landing-container" class="landing" hidden>
         <div class="intro">
             <div class="intro-text">
                 <p>I'm a Full-Stack Web Developer with a passion for creating incredible web applications</p>
@@ -77,7 +78,7 @@
     </div>
 </div>
 
-
+<script src="js/router.js"></script>
 </body>
 </html>
 <!--<div class="landing-footer">-->

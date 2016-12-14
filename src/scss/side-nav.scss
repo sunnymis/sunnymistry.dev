@@ -21,6 +21,9 @@
         top: 75px;
         line-height: 80px;
 
+        &:hover {
+            cursor: pointer;
+        }
 
         #sunny-fname {
             display: block;

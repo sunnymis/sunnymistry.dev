@@ -16,6 +16,8 @@
     position: relative;
     top: 75px;
     line-height: 80px; }
+    .side-nav .sunny-title:hover {
+      cursor: pointer; }
     .side-nav .sunny-title #sunny-fname {
       display: block;
       margin-bottom: 50px; }
