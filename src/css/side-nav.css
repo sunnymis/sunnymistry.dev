@@ -5,7 +5,11 @@
   position: fixed;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/stock2.png");
   background-size: auto 100%;
+  /* Very Large Devices, Wide Screens */
   /* Extra Small Devices, Phones */ }
+  @media only screen and (max-width: 2560px) {
+    .side-nav {
+      background-size: auto 110%; } }
   @media only screen and (max-width: 480px) {
     .side-nav {
       display: block;
@@ -131,8 +135,13 @@
     padding: 0 50px; }
     .side-nav .social-media-list li {
       display: inline-block;
+      /* Large Devices, Wide Screens */
       /* Small Devices, Tablets */
       /* Extra Small Devices, Phones */ }
+      @media only screen and (max-width: 1200px) {
+        .side-nav .social-media-list li {
+          display: inline-block;
+          margin: 0 30px 30px 0; } }
       @media only screen and (max-width: 768px) {
         .side-nav .social-media-list li {
           display: block;
