@@ -10,7 +10,11 @@ body {
   display: inline-block;
   position: relative;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  /* Extra Small Devices, Phones */ }
+  @media only screen and (max-width: 480px) {
+    .content-container {
+      width: 100%; } }
 
 @font-face {
   font-family: 'Simplifica';

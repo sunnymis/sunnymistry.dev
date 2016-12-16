@@ -2,20 +2,43 @@
   position: relative;
   height: 450px;
   background: #bdc3c7;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #bdc3c7, #00695C);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #bdc3c7, #00695C);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  /* Extra Small Devices, Phones */ }
+  @media only screen and (max-width: 480px) {
+    .landing .intro {
+      margin-top: 40px; } }
   .landing .intro .intro-text {
     width: 50%;
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 50px;
+    left: 50px;
     color: white;
     font-size: 30px;
     line-height: 50px;
-    font-family: 'Valera Round', sans-serif; }
+    font-family: 'Valera Round', sans-serif;
+    /* Large Devices, Wide Screens */
+    /* Small Devices, Tablets */
+    /* Extra Small Devices, Phones */ }
+    @media only screen and (max-width: 1200px) {
+      .landing .intro .intro-text {
+        position: absolute;
+        top: 20px;
+        left: 40px;
+        font-size: 25px;
+        width: 60%; } }
+    @media only screen and (max-width: 768px) {
+      .landing .intro .intro-text {
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        font-size: 20px;
+        line-height: 40px;
+        width: 60%;
+        z-index: 1; } }
+    @media only screen and (max-width: 480px) {
+      .landing .intro .intro-text {
+        font-size: 20px; } }
   .landing .intro .sunny-landing-image {
     width: 30%;
     height: 100%;
@@ -23,10 +46,22 @@
     right: 50px;
     background-image: url("../img/sunnyNoBG.png");
     background-size: auto 500px;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    /* Large Devices, Wide Screens */
+    /* Small Devices, Tablets */ }
     .landing .intro .sunny-landing-image img {
       overflow: hidden;
       height: 500px; }
+    @media only screen and (max-width: 1200px) {
+      .landing .intro .sunny-landing-image {
+        position: absolute;
+        right: 0;
+        width: 45%; } }
+    @media only screen and (max-width: 768px) {
+      .landing .intro .sunny-landing-image {
+        position: absolute;
+        right: 0;
+        width: 55%; } }
 
 .landing .recent-projects p {
   font-size: 35px;
@@ -49,9 +84,20 @@
     border: 1px solid #e8e8e8;
     margin: 0 20px;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    /* Large Devices, Wide Screens */ }
     .landing .recent-projects .project-list .project:hover {
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+    @media only screen and (max-width: 768px) {
+      .landing .recent-projects .project-list .project {
+        height: 225px;
+        width: 225px;
+        margin-bottom: 50px; } }
+    @media only screen and (max-width: 1200px) {
+      .landing .recent-projects .project-list .project {
+        height: 200px;
+        width: 200px;
+        margin-bottom: 50px; } }
   .landing .recent-projects .project-list #project1 {
     background-image: url("../img/stack.png");
     background-repeat: no-repeat;
@@ -74,6 +120,13 @@
       border-radius: 15px; }
     .landing .recent-projects .project-list #project1:hover:after {
       opacity: 1; }
+    @media only screen and (max-width: 768px) {
+      .landing .recent-projects .project-list #project1:before {
+        content: 'Stack OnTop';
+        font-size: 25px; }
+      .landing .recent-projects .project-list #project1:after {
+        content: '';
+        background: rgba(0, 0, 0, 0.3); } }
   .landing .recent-projects .project-list #project2 {
     background-image: url("../img/binger1.png");
     background-size: 100% auto;
@@ -97,6 +150,13 @@
       border-radius: 15px; }
     .landing .recent-projects .project-list #project2:hover:after {
       opacity: 1; }
+    @media only screen and (max-width: 768px) {
+      .landing .recent-projects .project-list #project2:before {
+        content: 'Binger';
+        font-size: 25px; }
+      .landing .recent-projects .project-list #project2:after {
+        content: '';
+        background: rgba(0, 0, 0, 0.3); } }
   .landing .recent-projects .project-list #project3 {
     background-image: url("../img/swoleciety1.png");
     background-size: 100% auto;
@@ -120,6 +180,13 @@
       border-radius: 15px; }
     .landing .recent-projects .project-list #project3:hover:after {
       opacity: 1; }
+    @media only screen and (max-width: 768px) {
+      .landing .recent-projects .project-list #project3:before {
+        content: 'Swoleciety';
+        font-size: 25px; }
+      .landing .recent-projects .project-list #project3:after {
+        content: '';
+        background: rgba(0, 0, 0, 0.3); } }
 
 .landing .landing-footer {
   position: absolute;

@@ -12,6 +12,11 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+        width: 100%;
+    }
 }
 
 @font-face {

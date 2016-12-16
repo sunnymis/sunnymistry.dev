@@ -81,7 +81,6 @@
         font-size: 25px;
         font-weight: 400;
         margin-top: 150px;
-
         /* Extra Small Devices, Phones */
         @media only screen and (max-width : 480px) {
             margin: 0;
@@ -89,6 +88,7 @@
             font-size: 20px;
             position: relative;
             background-color: #2f4f4f;
+
             &.responsive {
                 position: relative;
                 top: 20px;

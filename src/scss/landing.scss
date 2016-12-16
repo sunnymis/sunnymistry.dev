@@ -2,21 +2,48 @@
     .intro {
         position: relative;
         height: 450px;
-        background: #bdc3c7; /* fallback for old browsers */
-        //background: -webkit-linear-gradient(to left, #bdc3c7 , #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
-        //background: linear-gradient(to left, #bdc3c7 , #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        background: -webkit-linear-gradient(to left, #bdc3c7 , #00695C); /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to left, #bdc3c7 , #00695C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+        background: #bdc3c7;
+        //background: -webkit-linear-gradient(to left, #bdc3c7 , #2c3e50);
+        //background: linear-gradient(to left, #bdc3c7 , #2c3e50);
+        background: -webkit-linear-gradient(to left, #bdc3c7 , #00695C);
+        background: linear-gradient(to left, #bdc3c7 , #00695C);
+        /* Extra Small Devices, Phones */
+        @media only screen and (max-width : 480px) {
+            margin-top: 40px;
+        }
         .intro-text {
             width: 50%;
             position: absolute;
-            top: 100px;
-            left: 100px;
+            top: 50px;
+            left: 50px;
             color: white;
             font-size: 30px;
             line-height: 50px;
             font-family: 'Valera Round', sans-serif;
+
+            /* Large Devices, Wide Screens */
+            @media only screen and (max-width : 1200px) {
+                position: absolute;
+                top: 20px;
+                left: 40px;
+                font-size: 25px;
+                width: 60%;
+            }
+            /* Small Devices, Tablets */
+            @media only screen and (max-width : 768px) {
+                position: absolute;
+                top: 50px;
+                left: 30px;
+                font-size: 20px;
+                line-height: 40px;
+                width: 60%;
+                z-index: 1;
+            }
+            /* Extra Small Devices, Phones */
+            @media only screen and (max-width : 480px) {
+                font-size: 20px;
+            }
+
         }
         .sunny-landing-image {
             width: 30%;
@@ -29,6 +56,19 @@
             img {
                 overflow: hidden;
                 height: 500px;
+            }
+
+            /* Large Devices, Wide Screens */
+            @media only screen and (max-width : 1200px) {
+                position: absolute;
+                right: 0;
+                width: 45%;
+            }
+            /* Small Devices, Tablets */
+            @media only screen and (max-width : 768px) {
+                position: absolute;
+                right: 0;
+                width: 55%;
             }
         }
     }
@@ -62,6 +102,17 @@
                 &:hover {
                     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
                 }
+                @media only screen and (max-width : 768px) {
+                    height: 225px;
+                    width: 225px;
+                    margin-bottom: 50px;
+                }
+                /* Large Devices, Wide Screens */
+                @media only screen and (max-width : 1200px) {
+                    height: 200px;
+                    width: 200px;
+                    margin-bottom: 50px;
+                }
             }
             #project1 {
                 background-image: url('../img/stack.png');
@@ -85,6 +136,17 @@
                 }
                 &:hover:after {
                     opacity: 1;
+                }
+
+                @media only screen and (max-width : 768px) {
+                    &:before {
+                        content: 'Stack OnTop';
+                        font-size: 25px;
+                    }
+                    &:after {
+                        content: '';
+                        background:rgba(0,0,0,0.3);
+                    }
                 }
             }
 
@@ -112,6 +174,16 @@
                 &:hover:after {
                     opacity: 1;
                 }
+                @media only screen and (max-width : 768px) {
+                    &:before {
+                        content: 'Binger';
+                        font-size: 25px;
+                    }
+                    &:after {
+                        content: '';
+                        background:rgba(0,0,0,0.3);
+                    }
+                }
             }
 
             #project3 {
@@ -138,7 +210,16 @@
                 &:hover:after {
                     opacity: 1;
                 }
-
+                @media only screen and (max-width : 768px) {
+                    &:before {
+                        content: 'Swoleciety';
+                        font-size: 25px;
+                    }
+                    &:after {
+                        content: '';
+                        background:rgba(0,0,0,0.3);
+                    }
+                }
             }
         }
     }
