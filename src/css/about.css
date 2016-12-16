@@ -1,6 +1,5 @@
 #about-container {
-  background-color: #009688;
-  margin-top: -20px; }
+  background-color: #009688; }
   #about-container .about-header {
     padding: 50px;
     text-align: center; }
@@ -11,7 +10,6 @@
     padding: 0 1px 100px 1px;
     list-style-type: none;
     margin: 0;
-    background-color: #009688;
     /* This styles the verticle bar */ }
     #about-container .timeline:before {
       content: '';
