@@ -1,11 +1,21 @@
 #about-container {
     background-color: #009688;
     padding-bottom: 100px;
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+        width: 100%;
+    }
+
     .about-header {
         padding: 50px;
         text-align: center;
         h1 {
             font-size: 3em;
+        }
+        /* Extra Small Devices, Phones */
+        @media only screen and (max-width : 480px) {
+            padding: 50px 0 0 0;
         }
     }
 
@@ -26,6 +36,10 @@
             width: 5px;
             background: #000000;
             z-index: 5;
+            /* Extra Small Devices, Phones */
+            @media only screen and (max-width : 480px) {
+                z-index: 1;
+            }
         }
 
         li {
@@ -40,6 +54,10 @@
                 height: 0;
                 padding-bottom: 100px;
                 clear: both;
+                /* Extra Small Devices, Phones */
+                @media only screen and (max-width : 480px) {
+                    padding: 2em 0;
+                }
             }
 
             .timeline-section {
@@ -51,6 +69,15 @@
                 background-color: white;
                 padding-bottom: 20px;
                 box-sizing: border-box;;
+
+                /* Extra Small Devices, Phones */
+                @media only screen and (max-width : 480px) {
+                    z-index: 3;
+                    position: relative;
+                    width: 370px;
+                    top: 0;
+                    left: 0;
+                }
 
                 /* This styles the circles in the timeline bar*/
                 &:before {
@@ -120,6 +147,16 @@
                 &:before {
                     top: 45%;
                     left: -116px;
+                    /* Extra Small Devices, Phones */
+                    @media only screen and (max-width : 480px) {
+                        top: -20%;
+                        left: 45%;
+                    }
+                }
+                /* Extra Small Devices, Phones */
+                @media only screen and (max-width : 480px) {
+                    top: 50px;
+                    left: -180px;
                 }
             }
 
@@ -129,6 +166,16 @@
                     position: absolute;
                     top: 45%;
                     right: -120px;
+                    /* Extra Small Devices, Phones */
+                    @media only screen and (max-width : 480px) {
+                        top: -20%;
+                        left: 45%;
+                    }
+                }
+                /* Extra Small Devices, Phones */
+                @media only screen and (max-width : 480px) {
+                    top: 50px;
+                    left: -180px;
                 }
             }
 
