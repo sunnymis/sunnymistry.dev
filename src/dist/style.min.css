@@ -449,7 +449,7 @@ body {
   height: 100vh;
   display: inline-block;
   position: fixed;
-  background-color: blue;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/stock2.png");
   background-size: auto 100%;
   /* Very Large Devices, Wide Screens */
   /* Extra Small Devices, Phones */ }

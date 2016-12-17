@@ -14,24 +14,24 @@ gulp.task('sass', function () {
 });
 
 gulp.task('buildCSS',['sass'], function() {
-    return gulp.src('src/css/**/*.css')
+    return gulp.src(['src/css/**/*.css','src/css/style.min.css'])
         .pipe(concat('style.min.css'))
         .on('error', onError)
-        .pipe(gulp.dest('src/'))
+        .pipe(gulp.dest('src/dist'))
         .pipe(browserSync.stream({match: '**/*.css'}));
 });
 
 gulp.task('watch', ['buildCSS','browserSync'], function () {
     gulp.watch('src/scss/**/*.scss', ['buildCSS']);
     gulp.watch('src/js/**/*.js').on('change', browserSync.reload);
-    gulp.watch("src/*.html").on('change', browserSync.reload);
+    gulp.watch("*.html").on('change', browserSync.reload);
 });
 
 gulp.task('browserSync', function () {
     browserSync.init({
         injectChanges: true,
        server: {
-           baseDir: 'src'
+           baseDir: './'
        }
     });
 });
