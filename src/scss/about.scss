@@ -13,10 +13,15 @@
         h1 {
             font-size: 3em;
         }
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 768px) {
+            padding: 50px 0 0 0;
+        }
         /* Extra Small Devices, Phones */
         @media only screen and (max-width : 480px) {
             padding: 50px 0 0 0;
         }
+
     }
 
 
@@ -36,6 +41,10 @@
             width: 5px;
             background: #000000;
             z-index: 5;
+            /* Small Devices, Tablets */
+            @media only screen and (max-width : 768px) {
+                z-index: 1
+            }
             /* Extra Small Devices, Phones */
             @media only screen and (max-width : 480px) {
                 z-index: 1;
@@ -70,6 +79,13 @@
                 padding-bottom: 20px;
                 box-sizing: border-box;;
 
+                /* Small Devices, Tablets */
+                @media only screen and (max-width : 768px) {
+                    z-index: 3;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                }
                 /* Extra Small Devices, Phones */
                 @media only screen and (max-width : 480px) {
                     z-index: 3;
@@ -147,11 +163,21 @@
                 &:before {
                     top: 45%;
                     left: -116px;
+                    /* Small Devices, Tablets */
+                    @media only screen and (max-width : 768px) {
+                        top: -20%;
+                        left: 41%;
+                    }
                     /* Extra Small Devices, Phones */
                     @media only screen and (max-width : 480px) {
                         top: -20%;
                         left: 45%;
                     }
+                }
+                /* Small Devices, Tablets */
+                @media only screen and (max-width : 768px) {
+                    top: 50px;
+                    left: -180px;
                 }
                 /* Extra Small Devices, Phones */
                 @media only screen and (max-width : 480px) {
@@ -166,11 +192,21 @@
                     position: absolute;
                     top: 45%;
                     right: -120px;
+                    /* Small Devices, Tablets */
+                    @media only screen and (max-width : 768px) {
+                        top: -20%;
+                        left: 41%;
+                    }
                     /* Extra Small Devices, Phones */
                     @media only screen and (max-width : 480px) {
                         top: -20%;
                         left: 45%;
                     }
+                }
+                /* Small Devices, Tablets */
+                @media only screen and (max-width : 768px) {
+                    top: 50px;
+                    left: -180px;
                 }
                 /* Extra Small Devices, Phones */
                 @media only screen and (max-width : 480px) {
