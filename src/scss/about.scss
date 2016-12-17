@@ -13,6 +13,10 @@
         h1 {
             font-size: 3em;
         }
+        /* Large Devices, Wide Screens */
+        @media only screen and (max-width : 1200px) {
+            padding: 50px 0 0 0;
+        }
         /* Small Devices, Tablets */
         @media only screen and (max-width : 768px) {
             padding: 50px 0 0 0;
@@ -63,6 +67,14 @@
                 height: 0;
                 padding-bottom: 100px;
                 clear: both;
+                /* Large Devices, Wide Screens */
+                @media only screen and (max-width : 1200px) {
+                    padding: 5em 0;
+                }
+                /* Small Devices, Tablets */
+                @media only screen and (max-width : 768px) {
+                    padding: 2em 0;
+                }
                 /* Extra Small Devices, Phones */
                 @media only screen and (max-width : 480px) {
                     padding: 2em 0;
@@ -79,9 +91,14 @@
                 padding-bottom: 20px;
                 box-sizing: border-box;;
 
+                /* Large Devices, Wide Screens */
+                @media only screen and (max-width : 1200px) {
+                    width: 250px;
+                }
                 /* Small Devices, Tablets */
                 @media only screen and (max-width : 768px) {
                     z-index: 3;
+                    width: 400px;
                     position: relative;
                     top: 0;
                     left: 0;
@@ -93,6 +110,10 @@
                     width: 370px;
                     top: 0;
                     left: 0;
+                }
+                /* Really Extra Small Devices, Phones */
+                @media only screen and (max-width : 375px) {
+                    width: 350px;
                 }
 
                 /* This styles the circles in the timeline bar*/
@@ -173,7 +194,13 @@
                         top: -20%;
                         left: 45%;
                     }
+                    /* Really Extra Small Devices, Phones */
+                    @media only screen and (max-width : 375px) {
+                        top: -20%;
+                        left: 47%;
+                    }
                 }
+
                 /* Small Devices, Tablets */
                 @media only screen and (max-width : 768px) {
                     top: 50px;
@@ -201,6 +228,11 @@
                     @media only screen and (max-width : 480px) {
                         top: -20%;
                         left: 45%;
+                    }
+                    /* Really Extra Small Devices, Phones */
+                    @media only screen and (max-width : 375px) {
+                        top: -20%;
+                        left: 47%;
                     }
                 }
                 /* Small Devices, Tablets */

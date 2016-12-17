@@ -8,10 +8,14 @@
   #about-container .about-header {
     padding: 50px;
     text-align: center;
+    /* Large Devices, Wide Screens */
     /* Small Devices, Tablets */
     /* Extra Small Devices, Phones */ }
     #about-container .about-header h1 {
       font-size: 3em; }
+    @media only screen and (max-width: 1200px) {
+      #about-container .about-header {
+        padding: 50px 0 0 0; } }
     @media only screen and (max-width: 768px) {
       #about-container .about-header {
         padding: 50px 0 0 0; } }
@@ -52,7 +56,15 @@
         height: 0;
         padding-bottom: 100px;
         clear: both;
+        /* Large Devices, Wide Screens */
+        /* Small Devices, Tablets */
         /* Extra Small Devices, Phones */ }
+        @media only screen and (max-width: 1200px) {
+          #about-container .timeline li:after {
+            padding: 5em 0; } }
+        @media only screen and (max-width: 768px) {
+          #about-container .timeline li:after {
+            padding: 2em 0; } }
         @media only screen and (max-width: 480px) {
           #about-container .timeline li:after {
             padding: 2em 0; } }
@@ -65,12 +77,18 @@
         background-color: white;
         padding-bottom: 20px;
         box-sizing: border-box;
+        /* Large Devices, Wide Screens */
         /* Small Devices, Tablets */
         /* Extra Small Devices, Phones */
+        /* Really Extra Small Devices, Phones */
         /* This styles the circles in the timeline bar*/ }
+        @media only screen and (max-width: 1200px) {
+          #about-container .timeline li .timeline-section {
+            width: 250px; } }
         @media only screen and (max-width: 768px) {
           #about-container .timeline li .timeline-section {
             z-index: 3;
+            width: 400px;
             position: relative;
             top: 0;
             left: 0; } }
@@ -81,6 +99,9 @@
             width: 370px;
             top: 0;
             left: 0; } }
+        @media only screen and (max-width: 375px) {
+          #about-container .timeline li .timeline-section {
+            width: 350px; } }
         #about-container .timeline li .timeline-section:before {
           content: '';
           position: absolute;
@@ -134,7 +155,8 @@
           top: 45%;
           left: -116px;
           /* Small Devices, Tablets */
-          /* Extra Small Devices, Phones */ }
+          /* Extra Small Devices, Phones */
+          /* Really Extra Small Devices, Phones */ }
           @media only screen and (max-width: 768px) {
             #about-container .timeline li .timeline-section.right:before {
               top: -20%;
@@ -143,6 +165,10 @@
             #about-container .timeline li .timeline-section.right:before {
               top: -20%;
               left: 45%; } }
+          @media only screen and (max-width: 375px) {
+            #about-container .timeline li .timeline-section.right:before {
+              top: -20%;
+              left: 47%; } }
         @media only screen and (max-width: 768px) {
           #about-container .timeline li .timeline-section.right {
             top: 50px;
@@ -160,7 +186,8 @@
           top: 45%;
           right: -120px;
           /* Small Devices, Tablets */
-          /* Extra Small Devices, Phones */ }
+          /* Extra Small Devices, Phones */
+          /* Really Extra Small Devices, Phones */ }
           @media only screen and (max-width: 768px) {
             #about-container .timeline li .timeline-section.left:before {
               top: -20%;
@@ -169,6 +196,10 @@
             #about-container .timeline li .timeline-section.left:before {
               top: -20%;
               left: 45%; } }
+          @media only screen and (max-width: 375px) {
+            #about-container .timeline li .timeline-section.left:before {
+              top: -20%;
+              left: 47%; } }
         @media only screen and (max-width: 768px) {
           #about-container .timeline li .timeline-section.left {
             top: 50px;
