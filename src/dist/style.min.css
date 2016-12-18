@@ -209,6 +209,10 @@
             top: 50px;
             left: -180px; } }
 
+#contact-container iframe {
+  width: 100%;
+  height: 100vh; }
+
 
 .landing .intro {
   position: relative;

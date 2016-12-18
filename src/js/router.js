@@ -1,12 +1,13 @@
 var landingContainer = document.getElementById('landing-container');
 var aboutContainer = document.getElementById('about-container');
 var portfolioContainer = document.getElementById('portfolio-container');
-
+var contactContainer = document.getElementById('contact-container');
 var currentContainer;
 (function() {
     landingContainer.style.display = "block";
     aboutContainer.style.display = "none";
     portfolioContainer.style.display = "none";
+    contactContainer.style.display = "none";
     currentContainer = landingContainer;
 })();
 
@@ -24,6 +25,9 @@ function onPortfolioClick() {
 
 function onTitleClick() {
     swap(landingContainer);
+}
+function onContactClick() {
+    swap(contactContainer);
 }
 
 function onHamburgerClick() {
