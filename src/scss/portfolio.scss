@@ -1,0 +1,65 @@
+#portfolio-container {
+    .portfolio-header {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .portfolio-content {
+        display: inline-block;
+        width: 100%;
+        .row {
+            display: inline-block;
+            margin: 0 auto;
+            padding-bottom: 100px;
+            div {
+                display: inline-block;
+                padding: 0 3em;
+                box-sizing: border-box;
+                div {
+                    h2 {
+                        &.right {
+                            position: relative;
+                            left: 565px;
+                        }
+                    }
+                }
+            }
+            .content-row {
+                display: inline-block;
+                .project-description {
+                    vertical-align: top;
+                    box-sizing: border-box;
+                    float: left;
+                    width: 50%;
+                    padding: 0 3em;
+                    &.right {
+                        float: right;
+                    }
+                    p {
+                        font-size: 1.3rem;
+                        margin-top: 0;
+                        line-height: 1.8em;
+                    }
+                }
+                .project-image {
+                    box-sizing: border-box;
+                    float: right;
+                    width: 40%;
+                    padding: 0 3em;
+                    vertical-align: top;
+                    &.left {
+                        float: left;
+                    }
+                    img {
+                        height: 250px;
+                        width: 250px;
+                        &.large-width {
+                            width: 350px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

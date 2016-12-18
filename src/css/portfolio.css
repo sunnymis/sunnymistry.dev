@@ -1,0 +1,45 @@
+#portfolio-container .portfolio-header {
+  font-size: 1.5em;
+  text-align: center; }
+
+#portfolio-container .portfolio-content {
+  display: inline-block;
+  width: 100%; }
+  #portfolio-container .portfolio-content .row {
+    display: inline-block;
+    margin: 0 auto;
+    padding-bottom: 100px; }
+    #portfolio-container .portfolio-content .row div {
+      display: inline-block;
+      padding: 0 3em;
+      box-sizing: border-box; }
+      #portfolio-container .portfolio-content .row div div h2.right {
+        position: relative;
+        left: 565px; }
+    #portfolio-container .portfolio-content .row .content-row {
+      display: inline-block; }
+      #portfolio-container .portfolio-content .row .content-row .project-description {
+        vertical-align: top;
+        box-sizing: border-box;
+        float: left;
+        width: 50%;
+        padding: 0 3em; }
+        #portfolio-container .portfolio-content .row .content-row .project-description.right {
+          float: right; }
+        #portfolio-container .portfolio-content .row .content-row .project-description p {
+          font-size: 1.3rem;
+          margin-top: 0;
+          line-height: 1.8em; }
+      #portfolio-container .portfolio-content .row .content-row .project-image {
+        box-sizing: border-box;
+        float: right;
+        width: 40%;
+        padding: 0 3em;
+        vertical-align: top; }
+        #portfolio-container .portfolio-content .row .content-row .project-image.left {
+          float: left; }
+        #portfolio-container .portfolio-content .row .content-row .project-image img {
+          height: 250px;
+          width: 250px; }
+          #portfolio-container .portfolio-content .row .content-row .project-image img.large-width {
+            width: 350px; }
