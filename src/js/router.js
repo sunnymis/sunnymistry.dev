@@ -12,8 +12,8 @@ var currentContainer;
 })();
 
 function swap(newContainer) {
-    newContainer.style.display = "block";
     currentContainer.style.display = "none";
+    newContainer.style.display = "block";
     currentContainer = newContainer;
     closeMobileNav();
 }
