@@ -15,6 +15,7 @@ function swap(newContainer) {
     newContainer.style.display = "block";
     currentContainer.style.display = "none";
     currentContainer = newContainer;
+    closeMobileNav();
 }
 function onAboutClick() {
     swap(aboutContainer);
@@ -28,6 +29,13 @@ function onTitleClick() {
 }
 function onContactClick() {
     swap(contactContainer);
+}
+
+function closeMobileNav() {
+    var ul = document.getElementsByClassName('side-nav-list')[0];
+    var socialMediaUl = document.getElementsByClassName('social-media-list')[0];
+    ul.className = "side-nav-list";
+    socialMediaUl.className = "social-media-list";
 }
 
 function onHamburgerClick() {
