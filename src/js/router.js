@@ -1,21 +1,28 @@
 var landingContainer = document.getElementById('landing-container');
 var aboutContainer = document.getElementById('about-container');
+var portfolioContainer = document.getElementById('portfolio-container');
 
+var currentContainer;
 (function() {
     landingContainer.style.display = "block";
     aboutContainer.style.display = "none";
+    currentContainer = landingContainer;
 })();
 
-function swap(newContainer, oldContainer) {
+function swap(newContainer) {
     newContainer.style.display = "block";
-    oldContainer.style.display = "none";
+    currentContainer.style.display = "none";
+    currentContainer = newContainer;
 }
 function onAboutClick() {
-    swap(aboutContainer,landingContainer);
+    swap(aboutContainer);
+}
+function onPortfolioClick() {
+    swap(portfolioContainer);
 }
 
 function onTitleClick() {
-    swap(landingContainer,aboutContainer);
+    swap(landingContainer);
 }
 
 function onHamburgerClick() {
