@@ -497,20 +497,45 @@ body {
           width: 40%;
           padding: 0 3em;
           vertical-align: top;
-          margin-top: 70px; }
+          margin-top: 70px;
+          /* Large Devices, Wide Screens */
+          /* Small Devices, Tablets */ }
           #portfolio-container .portfolio-content .row .content-row .project-image.left {
-            float: left; }
+            float: left;
+            /* Large Devices, Wide Screens */
+            /* Small Devices, Tablets */ }
+            @media only screen and (max-width: 1200px) {
+              #portfolio-container .portfolio-content .row .content-row .project-image.left {
+                padding: 0 3em; } }
+            @media only screen and (max-width: 768px) {
+              #portfolio-container .portfolio-content .row .content-row .project-image.left {
+                padding: 0 3em; } }
+          @media only screen and (max-width: 1200px) {
+            #portfolio-container .portfolio-content .row .content-row .project-image {
+              padding-left: 0; } }
+          @media only screen and (max-width: 768px) {
+            #portfolio-container .portfolio-content .row .content-row .project-image {
+              padding-left: 0; } }
           #portfolio-container .portfolio-content .row .content-row .project-image img {
             height: 250px;
             width: 250px;
-            /* Large Devices, Wide Screens */ }
+            /* Large Devices, Wide Screens */
+            /* Small Devices, Tablets */ }
             #portfolio-container .portfolio-content .row .content-row .project-image img.large-width {
               width: 350px;
-              /* Large Devices, Wide Screens */ }
+              /* Large Devices, Wide Screens */
+              /* Small Devices, Tablets */ }
               @media only screen and (max-width: 1200px) {
                 #portfolio-container .portfolio-content .row .content-row .project-image img.large-width {
                   width: 250px; } }
+              @media only screen and (max-width: 768px) {
+                #portfolio-container .portfolio-content .row .content-row .project-image img.large-width {
+                  width: 200px; } }
             @media only screen and (max-width: 1200px) {
+              #portfolio-container .portfolio-content .row .content-row .project-image img {
+                height: 150px;
+                width: 150px; } }
+            @media only screen and (max-width: 768px) {
               #portfolio-container .portfolio-content .row .content-row .project-image img {
                 height: 150px;
                 width: 150px; } }
