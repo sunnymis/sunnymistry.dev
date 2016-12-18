@@ -6,6 +6,7 @@ var currentContainer;
 (function() {
     landingContainer.style.display = "block";
     aboutContainer.style.display = "none";
+    portfolioContainer.style.display = "none";
     currentContainer = landingContainer;
 })();
 
