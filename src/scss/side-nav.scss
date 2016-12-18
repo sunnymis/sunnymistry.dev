@@ -163,7 +163,14 @@
         text-align: justify;
         min-width: 50px;
         padding: 0 50px;
-
+        /* Really Extra Small Devices, Phones */
+        @media only screen and (max-width : 375px) {
+            padding: 0 30px;
+        }
+        /* Really Extra Small Devices, Phones */
+        @media only screen and (max-width : 320px) {
+            padding: 0 10px;
+        }
         li {
             display: inline-block;
             /* Large Devices, Wide Screens */

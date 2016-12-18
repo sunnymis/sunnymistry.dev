@@ -701,7 +701,15 @@ body {
     box-sizing: border-box;
     text-align: justify;
     min-width: 50px;
-    padding: 0 50px; }
+    padding: 0 50px;
+    /* Really Extra Small Devices, Phones */
+    /* Really Extra Small Devices, Phones */ }
+    @media only screen and (max-width: 375px) {
+      .side-nav .social-media-list {
+        padding: 0 30px; } }
+    @media only screen and (max-width: 320px) {
+      .side-nav .social-media-list {
+        padding: 0 10px; } }
     .side-nav .social-media-list li {
       display: inline-block;
       /* Large Devices, Wide Screens */
