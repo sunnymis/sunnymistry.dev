@@ -455,13 +455,6 @@ body {
     display: inline-block;
     margin: 0 auto;
     padding-bottom: 100px; }
-    #portfolio-container .portfolio-content .row div {
-      display: inline-block;
-      padding: 0 3em;
-      box-sizing: border-box; }
-      #portfolio-container .portfolio-content .row div div h2.right {
-        position: relative;
-        left: 565px; }
     #portfolio-container .portfolio-content .row .content-row {
       display: inline-block; }
       #portfolio-container .portfolio-content .row .content-row .project-description {
@@ -470,6 +463,8 @@ body {
         float: left;
         width: 50%;
         padding: 0 3em; }
+        #portfolio-container .portfolio-content .row .content-row .project-description h2 {
+          box-sizing: border-box; }
         #portfolio-container .portfolio-content .row .content-row .project-description.right {
           float: right; }
         #portfolio-container .portfolio-content .row .content-row .project-description p {
@@ -481,7 +476,8 @@ body {
         float: right;
         width: 40%;
         padding: 0 3em;
-        vertical-align: top; }
+        vertical-align: top;
+        margin-top: 70px; }
         #portfolio-container .portfolio-content .row .content-row .project-image.left {
           float: left; }
         #portfolio-container .portfolio-content .row .content-row .project-image img {

@@ -11,31 +11,24 @@
             display: inline-block;
             margin: 0 auto;
             padding-bottom: 100px;
-            div {
-                display: inline-block;
-                padding: 0 3em;
-                box-sizing: border-box;
-                div {
-                    h2 {
-                        &.right {
-                            position: relative;
-                            left: 565px;
-                        }
-                    }
-                }
-            }
+
             .content-row {
                 display: inline-block;
                 .project-description {
+                    //border: 1px solid red;
                     vertical-align: top;
                     box-sizing: border-box;
                     float: left;
                     width: 50%;
                     padding: 0 3em;
+                    h2 {
+                        box-sizing: border-box;
+                    }
                     &.right {
                         float: right;
                     }
                     p {
+                        //border: 1px solid green;
                         font-size: 1.3rem;
                         margin-top: 0;
                         line-height: 1.8em;
@@ -47,6 +40,8 @@
                     width: 40%;
                     padding: 0 3em;
                     vertical-align: top;
+                    //border: 1px solid blue;
+                    margin-top: 70px;
                     &.left {
                         float: left;
                     }
