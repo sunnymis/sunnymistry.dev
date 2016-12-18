@@ -30,12 +30,15 @@
             .content-row {
                 display: inline-block;
                 .project-description {
-                    //border: 1px solid red;
                     vertical-align: top;
                     box-sizing: border-box;
                     float: left;
                     width: 50%;
                     padding: 0 3em;
+                    /* Large Devices, Wide Screens */
+                    @media only screen and (max-width : 1200px) {
+                        width: 60%;
+                    }
                     h2 {
                         box-sizing: border-box;
                     }
@@ -47,6 +50,10 @@
                         font-size: 1.3rem;
                         margin-top: 0;
                         line-height: 1.8em;
+                        /* Large Devices, Wide Screens */
+                        @media only screen and (max-width : 1200px) {
+                            font-size: 1rem;
+                        }
                     }
                 }
                 .project-image {
@@ -65,6 +72,15 @@
                         width: 250px;
                         &.large-width {
                             width: 350px;
+                            /* Large Devices, Wide Screens */
+                            @media only screen and (max-width : 1200px) {
+                                width: 250px;
+                            }
+                        }
+                        /* Large Devices, Wide Screens */
+                        @media only screen and (max-width : 1200px) {
+                            height: 150px;
+                            width: 150px;
                         }
                     }
                 }

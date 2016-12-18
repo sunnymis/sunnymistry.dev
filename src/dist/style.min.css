@@ -474,7 +474,11 @@ body {
           box-sizing: border-box;
           float: left;
           width: 50%;
-          padding: 0 3em; }
+          padding: 0 3em;
+          /* Large Devices, Wide Screens */ }
+          @media only screen and (max-width: 1200px) {
+            #portfolio-container .portfolio-content .row .content-row .project-description {
+              width: 60%; } }
           #portfolio-container .portfolio-content .row .content-row .project-description h2 {
             box-sizing: border-box; }
           #portfolio-container .portfolio-content .row .content-row .project-description.right {
@@ -482,7 +486,11 @@ body {
           #portfolio-container .portfolio-content .row .content-row .project-description p {
             font-size: 1.3rem;
             margin-top: 0;
-            line-height: 1.8em; }
+            line-height: 1.8em;
+            /* Large Devices, Wide Screens */ }
+            @media only screen and (max-width: 1200px) {
+              #portfolio-container .portfolio-content .row .content-row .project-description p {
+                font-size: 1rem; } }
         #portfolio-container .portfolio-content .row .content-row .project-image {
           box-sizing: border-box;
           float: right;
@@ -494,9 +502,18 @@ body {
             float: left; }
           #portfolio-container .portfolio-content .row .content-row .project-image img {
             height: 250px;
-            width: 250px; }
+            width: 250px;
+            /* Large Devices, Wide Screens */ }
             #portfolio-container .portfolio-content .row .content-row .project-image img.large-width {
-              width: 350px; }
+              width: 350px;
+              /* Large Devices, Wide Screens */ }
+              @media only screen and (max-width: 1200px) {
+                #portfolio-container .portfolio-content .row .content-row .project-image img.large-width {
+                  width: 250px; } }
+            @media only screen and (max-width: 1200px) {
+              #portfolio-container .portfolio-content .row .content-row .project-image img {
+                height: 150px;
+                width: 150px; } }
 
 .side-nav {
   width: 25%;
