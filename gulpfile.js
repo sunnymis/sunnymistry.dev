@@ -27,6 +27,10 @@ gulp.task('watch', ['buildCSS','browserSync'], function () {
     gulp.watch("*.html").on('change', browserSync.reload);
 });
 
+gulp.task('watchOnly', ['buildCSS'], function () {
+    gulp.watch('src/scss/**/*.scss', ['buildCSS']);
+});
+
 gulp.task('browserSync', function () {
     browserSync.init({
         injectChanges: true,
@@ -37,6 +41,7 @@ gulp.task('browserSync', function () {
 });
 
 gulp.task('default',['watch']);
+gulp.task('build', ['watchOnly']);
 
 function onError(err) {
     console.log(err);

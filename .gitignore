@@ -1,6 +1,5 @@
-archive
-node_modules
+_site
+.sass-cache
+.jekyll-metadata
+/node_modules
 .idea/
-.jscsrc
-.jshintrc
-.editorconfig
