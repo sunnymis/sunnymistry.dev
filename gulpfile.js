@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
-var browserSync = require('browser-sync').create();
+var browserSync = require('browser-sync');
 
 gulp.task('sass', function () {
     return gulp.src('src/scss/**/*.scss')
@@ -27,8 +27,8 @@ gulp.task('watch', ['buildCSS','browserSync'], function () {
     gulp.watch("*.html").on('change', browserSync.reload);
 });
 
-gulp.task('watchOnly', ['buildCSS'], function () {
-    gulp.watch('src/scss/**/*.scss', ['buildCSS']);
+gulp.task('jekyllWatch', ['browser-sync'], function () {
+    gulp.watch("*.scss").on('change', browserSync.reload);
 });
 
 gulp.task('browserSync', function () {
@@ -40,8 +40,18 @@ gulp.task('browserSync', function () {
     });
 });
 
+gulp.task('browser-sync', function() {
+    browserSync({
+        server: {
+            baseDir: '_site'
+        }
+    });
+});
+
+
 gulp.task('default',['watch']);
-gulp.task('build', ['watchOnly']);
+
+gulp.task('build', ['jekyllWatch']);
 
 function onError(err) {
     console.log(err);

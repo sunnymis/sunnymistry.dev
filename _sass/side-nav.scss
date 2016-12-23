@@ -3,7 +3,7 @@
     height: 100vh;
     display: inline-block;
     position: fixed;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url("../img/stock2.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url("../src/img/stock2.png");
     background-size: auto 100%;
 
     /* Very Large Devices, Wide Screens */
@@ -41,6 +41,7 @@
         #sunny-fname {
             display: block;
             margin-bottom: 50px;
+            color: white;
             /* Extra Small Devices, Phones */
             @media only screen and (max-width : 480px) {
                 display: inline;
