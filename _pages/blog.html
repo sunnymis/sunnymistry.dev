@@ -10,10 +10,16 @@ weight: 3
     </div>
     <div class="blog-list-container">
         {% for post in site.posts %}
-        <time>{{ post.date | date: "%b %-d, %Y" }}</time>
-        <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+        <div class="blog-post">
+            <h3 class="blog-post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+            <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+            <p class="blog-post-description">{{ post.description }}</p>
+            {% for category in post.categories %}
+            <span class="blog-post-category">{{ category }}</span>
+            {% endfor %}
+        </div>
         {% endfor %}
 
-        <p>subscribe <a href="{{ '/feed.xml' | prepend: site.baseurl }}">via RSS</a></p>
+        <!--<p>subscribe <a href="{{ '/feed.xml' | prepend: site.baseurl }}">via RSS</a></p>-->
     </div>
 </div>

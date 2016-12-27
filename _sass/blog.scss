@@ -26,8 +26,41 @@
     }
   }
   .blog-list-container {
-    a {
-      color: black;
+    .blog-post {
+      margin: 50px auto 50px auto;
+      width: 50%;
+      padding-bottom: 50px;
+      border-bottom: 1px solid #ebeaea;
+
+      .blog-post-title {
+        font-size: 25px;
+        font-weight: 500;
+        a {
+          color: black;
+        }
+      }
+
+      time {
+        position: relative;
+        top: -15px;
+        color: #ada8a8;
+      }
+      .blog-post-description {
+        position: relative;
+        top: -10px;
+        color: #615b5b;
+      }
+      .blog-post-category {
+        display: inline-block;
+        border: 1px solid #e8e8e8;
+        background-color: #212121;
+        opacity: 0.8;
+        color: white;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        margin-right: 10px;
+        margin-top: 10px;
+      }
     }
   }
 }
