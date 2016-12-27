@@ -8,7 +8,7 @@
     }
 
     .about-header {
-        background-color: $header-color;
+        background-color: $secondary-color;
         color: $white;
         padding: 50px;
         text-align: center;
@@ -168,7 +168,7 @@
                         span {
                             display: inline-block;
                             border: 1px solid $border-gray;
-                            background-color: $header-color;
+                            background-color: $secondary-color;
                             opacity: 0.8;
                             color: $white;
                             padding: 5px 10px;
