@@ -1,14 +1,11 @@
 @import 'colors';
 
 #portfolio-container {
-    //background-color: #f5f5f5;
-    //padding-top: 50px;
     /* Extra Small Devices, Phones */
     @media only screen and (max-width : 480px) {
         width: 100%;
     }
     .portfolio-header {
-     //   font-size: 1.5em;
         text-align: center;
         background-color: $header-color;
         color: $white;
@@ -66,7 +63,6 @@
                         float: right;
                     }
                     p {
-                        //border: 1px solid green;
                         font-size: 1.3rem;
                         margin-top: 0;
                         line-height: 1.8em;
@@ -82,7 +78,6 @@
                     width: 40%;
                     padding: 0 3em;
                     vertical-align: top;
-                    //border: 1px solid blue;
                     margin-top: 70px;
                     &.left {
                         float: left;

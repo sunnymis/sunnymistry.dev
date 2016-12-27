@@ -1,6 +1,5 @@
 @import 'colors';
 #about-container {
-    //background-color: #009688;
     padding-bottom: 100px;
 
     /* Extra Small Devices, Phones */
@@ -38,7 +37,7 @@
         list-style-type: none;
         margin: 0;
 
-        /* This styles the verticle bar */
+        /* This styles the vertical bar */
         &:before {
             content: '';
             position: absolute;

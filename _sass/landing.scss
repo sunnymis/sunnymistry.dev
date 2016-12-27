@@ -223,27 +223,4 @@
             }
         }
     }
-
-    .landing-footer {
-        position: absolute;
-        width: 100%;
-        bottom: 100px;
-        p {
-            text-align: center;
-            font-size: 20px;
-        }
-        img {
-            height: 50px;
-            width: 100%;
-            position: absolute;
-            margin: 0 auto;
-            animation: arrow-bounce 2s infinite linear;
-        }
-    }
-}
-
-@keyframes arrow-bounce {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-5px)}
-    100% { transform: translateY(0px); }
 }
