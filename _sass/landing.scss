@@ -1,12 +1,11 @@
+@import 'colors';
+
 .landing {
     .intro {
         position: relative;
         height: 450px;
-        background: #bdc3c7;
-        //background: -webkit-linear-gradient(to left, #bdc3c7 , #2c3e50);
-        //background: linear-gradient(to left, #bdc3c7 , #2c3e50);
-        //background: -webkit-linear-gradient(to left, #bdc3c7 , #2196F3);
-        background: linear-gradient(to left, #bdc3c7 , #000);
+        background: $gradient-gray;
+        background: linear-gradient(to left, $gradient-gray , $main-bg-color);
 
         /* Extra Small Devices, Phones */
         @media only screen and (max-width : 480px) {
@@ -17,7 +16,7 @@
             position: absolute;
             top: 50px;
             left: 50px;
-            color: white;
+            color: $white;
             font-size: 30px;
             line-height: 50px;
             font-family: 'Valera Round', sans-serif;
@@ -85,7 +84,7 @@
                 padding-top: 20px;
                 margin: 0 auto;
                 height: 5px;
-                border-bottom: 1px solid rgb(232, 232, 232);
+                border-bottom: 1px solid $border-gray;
             }
         }
 
@@ -95,7 +94,7 @@
                 display: inline-block;
                 height: 300px;
                 width: 300px;
-                border: 1px solid rgb(232, 232, 232);
+                border: 1px solid $border-gray;
                 margin: 0 20px;
                 border-radius: 15px;
                 box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -125,11 +124,11 @@
                     content:'Stack OnTop';
                     line-height: 200px;
                     font-size: 25px;
-                    color: #fff;
+                    color: $white;
                     position:absolute;
                     width:100%; height:100%;
                     top:0; left:0;
-                    background:rgba(0,0,0,0.8);
+                    background: $opaque-black8;
                     opacity:0;
                     transition: all 0.5s;
                     -webkit-transition: all 0.5s;
@@ -146,7 +145,7 @@
                     }
                     &:after {
                         content: '';
-                        background:rgba(0,0,0,0.3);
+                        background:$opaque-black3;
                     }
                 }
             }
@@ -162,11 +161,11 @@
                     content:'Binger';
                     line-height: 200px;
                     font-size: 25px;
-                    color: #fff;
+                    color: $white;
                     position:absolute;
                     width:100%; height:100%;
                     top:0; left:0;
-                    background:rgba(0,0,0,0.8);
+                    background:$opaque-black8;
                     opacity:0;
                     transition: all 0.5s;
                     -webkit-transition: all 0.5s;
@@ -182,7 +181,7 @@
                     }
                     &:after {
                         content: '';
-                        background:rgba(0,0,0,0.3);
+                        background: $opaque-black3;
                     }
                 }
             }
@@ -198,11 +197,11 @@
                     content:'Swoleciety';
                     line-height: 200px;
                     font-size: 25px;
-                    color: #fff;
+                    color: $white;
                     position:absolute;
                     width:100%; height:100%;
                     top:0; left:0;
-                    background:rgba(0,0,0,0.8);
+                    background: $opaque-black8;
                     opacity:0;
                     transition: all 0.5s;
                     -webkit-transition: all 0.5s;
@@ -218,7 +217,7 @@
                     }
                     &:after {
                         content: '';
-                        background:rgba(0,0,0,0.3);
+                        background:$opaque-black3;
                     }
                 }
             }
