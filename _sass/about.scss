@@ -67,7 +67,7 @@
                 content: '';
                 display: block;
                 height: 0;
-                padding-bottom: 100px;
+                padding-bottom: 200px;
                 clear: both;
                 /* Large Devices, Wide Screens */
                 @media only screen and (max-width : 1200px) {
@@ -135,7 +135,7 @@
 
                     .content-card-title {
                         text-align: center;
-                        font-weight: bold;
+                        font-weight: normal;
                         font-size: 1.5em;
                         &:after {
                             content: '';
@@ -156,6 +156,7 @@
                     }
 
                     .content-card-description {
+                        font-size: 18px;
                         box-sizing: border-box;
                         padding: 0 20px;
                         margin-bottom: 20px;

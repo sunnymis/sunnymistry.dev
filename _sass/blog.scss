@@ -1,3 +1,5 @@
+@import 'colors';
+
 #blog-container {
   padding-bottom: 100px;
   /* Extra Small Devices, Phones */
@@ -5,8 +7,8 @@
     width: 100%;
   }
   .blog-header {
-    background-color: #212121;
-    color: white;
+    background-color: $secondary-color;
+    color: $white;
     padding: 50px;
     text-align: center;
     h1 {
@@ -36,26 +38,26 @@
         font-size: 25px;
         font-weight: 500;
         a {
-          color: black;
+          color: $black;
         }
       }
 
       time {
         position: relative;
         top: -15px;
-        color: #ada8a8;
+        color: $date-gray;
       }
       .blog-post-description {
         position: relative;
         top: -10px;
-        color: #615b5b;
+        color: $blog-light-black;
       }
       .blog-post-category {
         display: inline-block;
-        border: 1px solid #e8e8e8;
-        background-color: #212121;
+        border: 1px solid $border-gray;
+        background-color: $secondary-color;
         opacity: 0.8;
-        color: white;
+        color: $white;
         padding: 5px 10px;
         box-sizing: border-box;
         margin-right: 10px;

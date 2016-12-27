@@ -21,5 +21,21 @@ else
   alert('fuck');
 ```
 
+```css
+.someclass { 
+  color: #fff;
+  border: 1px solid black; 
+}
+```
+
+```html
+<div class="some-class">
+  <h1>A title</h1>
+  <article>
+    <p>Some text</p>
+  </article>
+</div>
+```
+
 ## Image example
 ![alt text](https://static.pexels.com/photos/67112/pexels-photo-67112.jpeg "Stock Photo")
