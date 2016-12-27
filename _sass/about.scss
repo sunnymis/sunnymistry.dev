@@ -1,3 +1,4 @@
+@import 'colors';
 #about-container {
     //background-color: #009688;
     padding-bottom: 100px;
@@ -8,8 +9,8 @@
     }
 
     .about-header {
-        background-color: #212121;
-        color: white;
+        background-color: $header-color;
+        color: $white;
         padding: 50px;
         text-align: center;
         h1 {
@@ -45,7 +46,7 @@
             left: 50%;
             height: 100%;
             width: 5px;
-            background: #000000;
+            background: $black;
             z-index: 5;
             /* Small Devices, Tablets */
             @media only screen and (max-width : 768px) {
@@ -86,10 +87,10 @@
             .timeline-section {
                 position: absolute;
                 width: 400px;
-                border: 1px solid #e8e8e8;
+                border: 1px solid $border-gray;
                 border-radius: 15px;
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-                background-color: white;
+                background-color: $white;
                 padding-bottom: 20px;
                 box-sizing: border-box;;
 
@@ -125,9 +126,9 @@
                     display: block;
                     width: 30px;
                     height: 30px;
-                    background: white;
+                    background: $white;
                     border-radius: 50%;
-                    border: 3px solid black;
+                    border: 3px solid $black;
                     z-index: 10;
                 }
 
@@ -140,7 +141,7 @@
                         &:after {
                             content: '';
                             display: block;
-                            border-bottom: 1px solid #E8E8E8;
+                            border-bottom: 1px solid $border-gray;
                             width: 75%;
                             margin: 0 auto;
                         }
@@ -152,7 +153,7 @@
                         left: 10px;
                         font-style: italic;
                         text-align: center;
-                        color: #757575;
+                        color: $card-date-color;
                     }
 
                     .content-card-description {
@@ -167,17 +168,14 @@
                         text-align: center;
                         span {
                             display: inline-block;
-                            border: 1px solid #e8e8e8;
-                            background-color: #212121;
+                            border: 1px solid $border-gray;
+                            background-color: $header-color;
                             opacity: 0.8;
-                            color: white;
+                            color: $white;
                             padding: 5px 10px;
                             box-sizing: border-box;
                             margin-right: 10px;
                             margin-top: 10px;
-                            &:hover {
-                                background-color: #939393;
-                            }
                         }
                     }
                 }
