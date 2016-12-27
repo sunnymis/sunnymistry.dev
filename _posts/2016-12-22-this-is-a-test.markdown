@@ -5,34 +5,21 @@ date:   2016-12-22 21:09:21 -0500
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
 categories: jekyll test
 ---
-This is my test post
 
 # H1 header
 
-## H2 header
+This is my test post and what if i `make this into a tick` then what?
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud `var x = 5; ` ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. `config.json`Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### H3 header
+A quote would look like:
+> Test block quote goes here.
 
-#### H4 header
+```javascript
+if(foo==true)
+  alert('this works?');
+else
+  alert('fuck');
+```
 
-##### H5 header
-
-###### H6 header
-
-First level header
-==================
-
-Second level header
--------------------
-
-
-> A sample blockquote.
->
-> >Nested blockquotes are
-> >also possible.
->
-> This is a blockquote
-continued on this
-and this line.
-> ## Headers work too
-> This is the outer quote again.
+## Image example
+![alt text](https://static.pexels.com/photos/67112/pexels-photo-67112.jpeg "Stock Photo")

@@ -1,54 +1,97 @@
 
-#main {
-  margin-top: 20px;
-  padding: 0 20px 90px;
-  background-color: white;
+#post-container {
+  margin-top: 50px;
 
-  /* Markdown */
-  .markdown-body h1,
-  .markdown-body h2,
-  .markdown-body h3,
-  .markdown-body h4,
-  .markdown-body h5,
-  .markdown-body h6,
-  .markdown-body p,
-  .markdown-body pre,
-  .markdown-body ul,
-  .markdown-body ol,
-  .markdown-body dl,
-  .markdown-body table,
-  .markdown-body blockquote {
-    margin-bottom: 20px;
+  .post-title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+
+    .post-title-header {
+      font-weight: 500;
+      /* Extra Small Devices, Phones */
+      @media only screen and (max-width : 480px) {
+        margin-top: 80px;
+      }
+    }
+    time {
+      position: relative;
+      top: -10px;
+      color: #615b5b;
+      font-size: 1em;
+    }
+
+    .post-categories {
+      font-size: 0.8em;
+      span {
+        display: inline-block;
+        border: 1px solid #e8e8e8;
+        background-color: #212121;
+        opacity: 0.8;
+        color: white;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        margin-right: 10px;
+        margin-top: 10px;
+      }
+    }
   }
 
-  .markdown-body h1,
-  .markdown-body h2,
-  .markdown-body h3,
-  .markdown-body h4,
-  .markdown-body h5,
-  .markdown-body h6 {
-    font-weight: bold;
-  }
+  .markdown-body {
+    margin: 0 auto;
+    width: 75%;
 
-  .markdown-body h1 {
-    font-size: 28px;
-  }
+    h1 {
+      font-size: 2rem;
+      font-weight: normal;
+      color: rgb(51,51,51);
+    }
 
-  .markdown-body h2 {
-    font-size: 24px;
-    color: #557398;
-  }
+    h2 {
+      font-size: 24px;
+      font-weight: normal;
+      color: rgb(51,51,51);
+    }
 
-  .markdown-body h3 {
-    font-size: 20px;
-  }
+    p {
+      line-height: 2;
+      font-size: 1.25em;
+      color: rgb(102,102,102);
 
-  .markdown-body h4 {
-    font-size: 18px;
-  }
+      code {
+        padding: 2px 4px;
+        font-size: 14px;
+        color: #e74b3c;
+        background: #faf9f9;
+        border: 1px solid #ebeaea;
+        border-radius: 1px;
+      }
+    }
 
-  .markdown-body h5 {
-    font-size: 16px;
+    blockquote {
+      display: block;
+      margin-bottom: 30px;
+      padding: 0 0 4px 15px;
+      font-family: Helvetica,Arial,sans-serif;
+      font-size: 20px;
+      font-style: italic;
+      line-height: 1.6;
+      color: #ada8a8;
+      border-left: 3px solid dodgerblue;
+      width: 100%;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    div {
+      pre {
+        code {
+          font-size: 1.5em;
+        }
+      }
+    }
   }
 
   .markdown-body pre {
@@ -156,7 +199,7 @@
     color: #d6d6d6;
     padding: 2px 3px;
   }
-
+/*
   .markdown-body blockquote {
     font-style: italic;
     font-family:Georgia, serif;
@@ -178,6 +221,7 @@
     display: block;
     float: left;
   }
+  */
 
   .markdown-body img {
     max-width: 100%;
