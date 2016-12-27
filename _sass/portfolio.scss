@@ -1,3 +1,5 @@
+@import 'colors';
+
 #portfolio-container {
     //background-color: #f5f5f5;
     //padding-top: 50px;
@@ -8,8 +10,8 @@
     .portfolio-header {
      //   font-size: 1.5em;
         text-align: center;
-        background-color: #212121;
-        color: white;
+        background-color: $header-color;
+        color: $white;
         padding: 50px;
         h1 {
             font-size: 3em;
@@ -35,7 +37,7 @@
                 top: 75px;
                 width: 50%;
                 margin: 0 auto;
-                border-bottom: 1px solid #e0e0e0;
+                border-bottom: 1px solid $border-gray;
             }
             .content-row {
                 display: inline-block;
@@ -55,7 +57,7 @@
                     }
                     a {
                         text-decoration: none;
-                        color: #000;
+                        color: $black;
                     }
                     h2 {
                         box-sizing: border-box;
