@@ -35,7 +35,7 @@
       border-bottom: 1px solid #ebeaea;
 
       .blog-post-title {
-        font-size: 25px;
+        font-size: 1.5rem;
         font-weight: 500;
         a {
           color: $black;
@@ -51,6 +51,7 @@
         position: relative;
         top: -10px;
         color: $blog-light-black;
+        line-height: 1.5;
       }
       .blog-post-category {
         display: inline-block;

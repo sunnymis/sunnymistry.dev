@@ -6,7 +6,6 @@
         height: 450px;
         background: $gradient-gray;
         background: linear-gradient(to left, $gradient-gray , $primary-color);
-
         /* Extra Small Devices, Phones */
         @media only screen and (max-width : 480px) {
             margin-top: 40px;
