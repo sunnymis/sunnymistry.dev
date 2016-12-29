@@ -34,6 +34,11 @@
       padding-bottom: 50px;
       border-bottom: 1px solid #ebeaea;
 
+      /* Extra Small Devices, Phones */
+      @media only screen and (max-width: 480px) {
+        width: 90%;
+      }
+
       .blog-post-title {
         font-size: 1.5rem;
         font-weight: 500;
@@ -53,10 +58,16 @@
         color: $blog-light-black;
         line-height: 1.5;
       }
+      ul {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0;
+      }
     }
     .tags {
       float: right;
       margin-right: 50px;
+      box-sizing: border-box;
 
       .blog-post-tag {
         display: block;
@@ -64,16 +75,18 @@
           cursor: pointer;
           color: $gradient-gray;
         }
-        ///* Extra Small Devices, Phones */
-        //@media only screen and (max-width : 480px) {
-        //  display: inline-block;
-        //}
+        /* Extra Small Devices, Phones */
+        @media only screen and (max-width : 480px) {
+          display: inline-block;
+        }
       }
 
-      ///* Extra Small Devices, Phones */
-      //@media only screen and (max-width : 480px) {
-      //  float: none;
-      //}
+      /* Extra Small Devices, Phones */
+      @media only screen and (max-width : 480px) {
+        float: none;
+        width: 100%;
+        padding-left: 20px;
+      }
     }
     #show-all {
       list-style: none;
