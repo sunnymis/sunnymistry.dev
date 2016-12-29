@@ -62,7 +62,6 @@ function containsTag(post,tag) {
             hasTag = true;
         }
     });
-    console.log(hasTag);
     return hasTag;
 }
 

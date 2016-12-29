@@ -71,8 +71,9 @@
 
       .blog-post-tag {
         display: block;
-        &:hover {
+        &:hover, &:focus {
           cursor: pointer;
+          background-color: $secondary-color;
           color: $gradient-gray;
         }
         /* Extra Small Devices, Phones */
