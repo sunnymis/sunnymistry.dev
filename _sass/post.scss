@@ -41,7 +41,11 @@
   .markdown-body {
     margin: 0 auto;
     width: 75%;
-
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width: 480px) {
+      width: 90%;
+      box-sizing: border-box;
+    }
     h1 {
       font-size: 2rem;
       font-weight: normal;
@@ -81,6 +85,11 @@
       border-left: 3px solid $tertiary-color;
       width: 100%;
 
+      /* Extra Small Devices, Phones */
+      @media only screen and (max-width: 480px) {
+        font-size: 1em;
+      }
+
       p {
         margin-bottom: 0;
       }
@@ -90,6 +99,10 @@
       pre {
         code {
           font-size: 1.5em;
+          /* Extra Small Devices, Phones */
+          @media only screen and (max-width: 480px) {
+            font-size: 1em;
+          }
         }
       }
     }
