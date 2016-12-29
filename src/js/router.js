@@ -1,8 +1,8 @@
 (function() {
-    // if(window.location.hash) {
-    //     var tag = window.location.hash.split('#')[1];
-    //     filter(tag);
-    // }
+    if(window.location.hash) {
+        var tag = window.location.hash.split('#')[1];
+        filter(tag);
+    }
 })();
 function onAboutClick() {
     closeMobileNav();
@@ -75,3 +75,6 @@ function setActive(tag) {
     }
 }
 
+function redirectAndFilter(tag) {
+    console.log(tag);
+}
