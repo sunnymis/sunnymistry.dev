@@ -9,14 +9,27 @@ weight: 3
         <h1>Blog</h1>
     </div>
     <div class="blog-list-container">
+        <ul class="tags">
+            {% for tag in site.tags %}
+            {% assign t = tag | first %}
+            {% assign posts = tag  | last %}
+            <li class="blog-post-tag" onclick="filter('{{ t }}'); setActive(this);">{{t | downcase | replace:" ","-" }} ({{ posts | size }})</li>
+            {% endfor %}
+            <li id="show-all" onclick="filter('showall');setActive();">Show All</li>
+        </ul>
         {% for post in site.posts %}
         <div class="blog-post">
             <h3 class="blog-post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
             <time>{{ post.date | date: "%B %-d, %Y" }}</time>
             <p class="blog-post-description">{{ post.description }}</p>
-            {% for category in post.categories %}
-            <span class="blog-post-category">{{ category }}</span>
-            {% endfor %}
+            <ul>
+                {% for tag in post.tags %}
+                <li class="blog-post-tag" onclick="filter('{{ tag }}'); setActive();">{{tag | downcase | replace:" ","-" }}</li>
+                {% endfor %}
+            </ul>
+            <!--{% for tag in post.tags %}-->
+            <!--<span class="blog-post-tag" onclick="filter('{{ tag }}'); setActive(this);">{{ tag }}</span>-->
+            <!--{% endfor %}-->
         </div>
         {% endfor %}
 

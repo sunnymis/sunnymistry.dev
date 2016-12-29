@@ -3,7 +3,7 @@ layout: post
 title:  "My First Test Post!"
 date:   2016-12-22 21:09:21 -0500
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
-categories: jekyll test
+tags: jekyll test
 ---
 
 # H1 header

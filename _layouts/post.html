@@ -5,9 +5,9 @@ layout: default
     <div class="post-title">
         <h1 class="post-title-header">{{ page.title }}</h1>
         <time>{{ page.date | date: "%B %-d, %Y" }}</time>
-        <div class="post-categories">
-        {% for category in page.categories %}
-            <span class="blog-post-category">{{ category }}</span>
+        <div class="post-tags">
+        {% for tag in page.tags %}
+            <span class="blog-post-category">{{ tag }}</span>
         {% endfor %}
         </div>
     </div>
