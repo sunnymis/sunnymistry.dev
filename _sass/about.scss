@@ -30,6 +30,48 @@
 
     }
 
+    .about-secondary-header {
+        h2 {
+            text-align: center;
+            font-weight: normal;
+            margin: 50px 0 0 0;
+            font-size: 2em;
+
+        }
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 41%;
+            border-bottom: 2px solid #696969;
+            margin-left: 30%;
+            margin-bottom: 50px;
+            margin-top: 20px;
+        }
+    }
+
+    .skills-container {
+        width: 75%;
+        margin: 0 auto;
+        padding: 0;
+
+        h3 {
+            font-size: 1.5em;
+            font-weight: normal;
+        }
+        .skill-column {
+            display: inline-block;
+            width: 33%;
+            vertical-align: top;
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            line-height: 3;
+        }
+
+    }
+
 
     .timeline {
         position: relative;
