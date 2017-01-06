@@ -7,10 +7,12 @@
     width: 100%;
   }
   .blog-header {
-    background-color: $secondary-color;
-    color: $white;
-    padding: 50px;
+    background-color: $white;
+    color: $black;
+    padding: 30px;
     text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
     h1 {
       font-size: 3em;
     }

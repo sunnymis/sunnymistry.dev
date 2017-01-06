@@ -6,10 +6,12 @@
         width: 100%;
     }
     .portfolio-header {
+        background-color: $white;
+        color: $black;
+        padding: 30px;
         text-align: center;
-        background-color: $secondary-color;
-        color: $white;
-        padding: 50px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 400;
         h1 {
             font-size: 3em;
         }
