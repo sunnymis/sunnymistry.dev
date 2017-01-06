@@ -1,5 +1,5 @@
 @import 'colors';
-
+* { margin: 0; padding: 0; }
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
@@ -18,14 +18,8 @@ a {
 }
 
 .content-container {
-    height: 100vh;
-    width: 75%;
-    float: right;
-    display: inline-block;
     position: relative;
-    margin: 0;
-    padding: 0;
-
+    top: -52px;
     /* Extra Small Devices, Phones */
     @media only screen and (max-width : 480px) {
         width: 100%;
