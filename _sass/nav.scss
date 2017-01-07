@@ -1,33 +1,12 @@
 @import 'colors';
 
-.side-nav {
-    width: 100%;
-    height: 75px;
-    position: fixed;
-    top: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 9999;
+.navigation-header {
 
-    /* Very Large Devices, Wide Screens */
-    @media only screen and (max-width : 2560px) {
-        background-size: auto 110%;
-    }
-    /* Extra Small Devices, Phones */
-    @media only screen and (max-width : 480px) {
-        display: block;
-        height: 50px;
-        width: 100%;
-        z-index: 999;
-        background-image: none;
-        background-color: $black;
-    }
-
-
-    .sunny-title {
+    .header-title {
         font-family: 'Simplifica', sans-serif;
         letter-spacing: 15px;
         display: block;
-        color: #fff;
+        color: red;
         font-size: 50px;
         position: relative;
         top: 15px;
@@ -66,6 +45,32 @@
         }
 
     }
+
+}
+.side-nav {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9999;
+
+    /* Very Large Devices, Wide Screens */
+    @media only screen and (max-width : 2560px) {
+        background-size: auto 110%;
+    }
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+        display: block;
+        height: 50px;
+        width: 100%;
+        z-index: 999;
+        background-image: none;
+        background-color: $black;
+    }
+
+
+
 
     .side-nav-list {
         list-style: none;

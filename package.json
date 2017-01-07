@@ -15,6 +15,7 @@
   "license": "",
   "devDependencies": {
     "browser-sync": "^2.18.2",
+    "child_process": "^1.0.2",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.13",
     "gulp-concat": "^2.6.1",

@@ -1,21 +1,22 @@
-<mav class="side-nav">
-    <div class="sunny-title">
+<header class="navigation-header">
+    <div class="header-title">
         <a href="{{ site.url }}">
-        <span id="sunny-fname">SUNNY MISTRY</span>
+            <span id="sunny-name">SUNNY MISTRY</span>
         </a>
     </div>
 
     {% assign pages = site.pages | sort:"weight"  %}
-    <ul class="side-nav-list">
-        <!--<li><span onclick="onAboutClick()">About</span></li>-->
-        {% for page in pages | sort:"weight" %} {% if page.title %}
-        <li>
-            <a href="{{ page.url | prepend: site.baseurl }}">
-                <span>{{ page.title }}</span>
-            </a>
-        </li>
-        {% endif %} {% endfor %}
-    </ul>
+    <nav>
+        <ul class="side-nav-list">
+            {% for page in pages | sort:"weight" %} {% if page.title %}
+            <li>
+                <a href="{{ page.url | prepend: site.baseurl }}">
+                    <span>{{ page.title }}</span>
+                </a>
+            </li>
+            {% endif %} {% endfor %}
+        </ul>
+    </nav>
     <!--<span class="hamburger-icon" onclick="onHamburgerClick()">&#9776;</span>-->
     <!--<ul class="social-media-list">-->
         <!--<li><a href="https://github.com/sunnymis"><img src="{{site.baseurl}}/src/icons/svg/github.svg"/></a></li>-->
@@ -23,4 +24,4 @@
         <!--<li><a href="https://twitter.com/sunnyvmistry"><img src="{{site.baseurl}}/src/icons/svg/twitter.svg"/></a></li>-->
         <!--<li><a href="mailto:sunnyvmistry@gmail.com"><img src="{{site.baseurl}}/src/icons/svg/gmail.svg"/></a></li>-->
     <!--</ul>-->
-</mav>
+</header>
