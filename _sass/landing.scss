@@ -13,6 +13,17 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 375px) {  }
 
+
+/**
+  COMMON STYLES
+*/
+.section-title {
+    font-size: 3em;
+    padding: 50px 0;
+    text-align: center;
+}
+
+
 .landing {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../src/img/wood-desk.png");
@@ -83,36 +94,87 @@
     }
 }
 
+
+
 .about {
-    height: 553px;
     position: relative;
-    h2 {
-        text-align: center;
-        margin-top: 50px;
-        font-size: 2em;
-        margin-bottom: 100px;
-    }
+
     .about-content {
         width: 50%;
         margin: 0 auto;
-        .sunny-landing-image {
+        position: relative;
+
+        /* Large Devices, Wide Screens */
+        @media only screen and (max-width : 1440px) {
+            width: 75%;
+        }
+        /* Large Devices, Wide Screens */
+        @media only screen and (max-width : 1200px) {
+            width: 100%;
+        }
+
+        .sunny-image {
             display: inline-block;
             width: 30%;
-            height: 100%;
-            position: absolute;
-            right: 250px;
-            bottom: -53px;
+            height: 500px;
             background-image: url(../src/img/sunnyNoBG.png);
             background-size: auto 500px;
-            z-index: 99;
             background-repeat: no-repeat;
-            img {
-                overflow: hidden;
-                height: 500px;
+            /* Large Devices, Wide Screens */
+            @media only screen and (max-width : 1440px) {
+                width: 320px;
+                margin-left: 80px;
             }
+            /* Large Devices, Wide Screens */
+            @media only screen and (max-width : 1200px) {
+                margin: 0;
+                width: 30%;
+            }
+            /* Small Devices, Tablets */
+            @media only screen and (max-width : 768px) {
+                width: 40%;
+            }
+            /* Extra Small Devices, Phones */
+            @media only screen and (max-width : 480px) {
+                transform: translateY(-440px);
+                width: 80%;
+                margin-left: 30px;
+            }
+            /* Extra Small Devices, Phones */
+            @media only screen and (max-width : 375px) {
+                transform: translateY(-470px);
+                margin-left: 20px;
+            }
+
+
+
         }
         .about-text {
             width: 60%;
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            top: 100px;
+
+            /* Large Devices, Wide Screens */
+            @media only screen and (max-width : 1200px) {
+                margin-left: 50px;
+            }
+            /* Small Devices, Tablets */
+            @media only screen and (max-width : 768px) {
+                width: 50%;
+            }
+            /* Extra Small Devices, Phones */
+            @media only screen and (max-width : 480px) {
+                transform: translateY(375px);
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                p {
+                    text-align: left;
+                    margin: 0 20px;
+                }
+            }
 
             h3 {
                 font-size: 2em;
@@ -133,7 +195,7 @@
             }
             a {
                 color: white;
-                padding: 20px;
+                padding: 20px 30px;
                 background-color: black;
                 border-radius: 3px;
             }
