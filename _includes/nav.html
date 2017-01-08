@@ -6,18 +6,24 @@
     </div>
 
     {% assign pages = site.pages | sort:"weight"  %}
-    <nav>
-        <ul class="side-nav-list">
-            {% for page in pages | sort:"weight" %} {% if page.title %}
+    <nav class="navigation">
+        <ul class="navigation-list">
+            {% for page in pages | sort:"weight" %} {% if page.title and page.title != "Blog"%}
             <li>
-                <a href="{{ page.url | prepend: site.baseurl }}">
+                <a href="{{ site.url | append: "#" | append: {{page.title | downcase}}">
                     <span>{{ page.title }}</span>
                 </a>
             </li>
             {% endif %} {% endfor %}
+            <li>
+                <a href="{{ site.baseurl | append: "Blog" }}">
+                    <span>Blog</span>
+                </a>
+            </li>
         </ul>
     </nav>
-    <!--<span class="hamburger-icon" onclick="onHamburgerClick()">&#9776;</span>-->
+    <span class="hamburger-icon" onclick="onHamburgerClick()">&#9776;</span>
+
     <!--<ul class="social-media-list">-->
         <!--<li><a href="https://github.com/sunnymis"><img src="{{site.baseurl}}/src/icons/svg/github.svg"/></a></li>-->
         <!--<li><a href="https://www.linkedin.com/in/sunnymistry"><img src="{{site.baseurl}}/src/icons/svg/linkedin.svg"/></a></li>-->

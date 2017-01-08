@@ -26,18 +26,18 @@ function closeMobileNav() {
 }
 
 function onHamburgerClick() {
-    var ul = document.getElementsByClassName('side-nav-list')[0];
-    if (ul.className === 'side-nav-list') {
+    var ul = document.getElementsByClassName('navigation')[0];
+    if (ul.className === 'navigation') {
         ul.className += " responsive";
     } else {
-        ul.className = "side-nav-list";
+        ul.className = "navigation";
     }
-    var socialMediaUl = document.getElementsByClassName('social-media-list')[0];
-    if (socialMediaUl.className === 'social-media-list') {
-        socialMediaUl.className += " responsive";
-    } else {
-        socialMediaUl.className = "social-media-list";
-    }
+    // var socialMediaUl = document.getElementsByClassName('social-media-list')[0];
+    // if (socialMediaUl.className === 'social-media-list') {
+    //     socialMediaUl.className += " responsive";
+    // } else {
+    //     socialMediaUl.className = "social-media-list";
+    // }
 }
 
 function filter(tag) {
