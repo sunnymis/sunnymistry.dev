@@ -1,7 +1,23 @@
 @import 'colors';
 
 #post-container {
-  margin-top: 50px;
+  padding-top: 120px;
+  width: 50%;
+  margin: 0 auto;
+  /* Large Devices, Wide Screens */
+  @media only screen and (max-width : 1440px) {
+    width: 75%;
+  }
+  /* Large Devices, Wide Screens */
+  @media only screen and (max-width : 1200px) {
+    width: 85%;
+  }
+  /* Small Devices, Tablets */
+  @media only screen and (max-width : 768px) {  }
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width : 480px) {  }
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width : 375px) {  }
 
   .post-title {
     text-align: center;
@@ -10,6 +26,7 @@
 
     .post-title-header {
       font-weight: 500;
+      margin-bottom: 20px;
       /* Extra Small Devices, Phones */
       @media only screen and (max-width : 480px) {
         margin-top: 80px;
@@ -49,6 +66,9 @@
   .markdown-body {
     margin: 0 auto;
     width: 75%;
+    * {
+      margin-bottom: 20px;
+    }
     /* Extra Small Devices, Phones */
     @media only screen and (max-width: 480px) {
       width: 90%;

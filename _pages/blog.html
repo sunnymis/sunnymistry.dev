@@ -4,10 +4,9 @@ title: Blog
 permalink: /blog/
 weight: 3
 ---
-<div id="blog-container">
-    <div class="blog-header">
-        <h1>Blog</h1>
-    </div>
+<section id="blog-container">
+
+    <h1 class="section-title">Blog</h1>
     <div class="blog-list-container">
         <ul class="tags">
             {% for tag in site.tags %}
@@ -35,4 +34,4 @@ weight: 3
 
         <!--<p>subscribe <a href="{{ '/feed.xml' | prepend: site.baseurl }}">via RSS</a></p>-->
     </div>
-</div>
+</section>
