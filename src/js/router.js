@@ -3,6 +3,20 @@
         var tag = window.location.hash.split('#')[1];
         filter(tag);
     }
+    var nav = document.getElementsByClassName('navigation-header')[0];
+    var sunnyNavTitle = document.getElementById('sunny-name');
+    window.addEventListener('scroll',function(evt) {
+        console.log(window.pageYOffset);
+       if (window.pageYOffset >= 400) {
+           nav.style.transition = "background-color 1s linear";
+           nav.style.backgroundColor = "#000";
+           sunnyNavTitle.style.transition = "opacity 1s linear";
+           sunnyNavTitle.style.opacity = "1";
+       } else {
+           nav.style.backgroundColor = "transparent";
+           sunnyNavTitle.style.opacity = "0";
+       }
+    });
 })();
 function onAboutClick() {
     closeMobileNav();
@@ -26,9 +40,11 @@ function closeMobileNav() {
 }
 
 function onHamburgerClick() {
+    var nav = document.getElementsByClassName('navigation-header')[0];
     var ul = document.getElementsByClassName('navigation')[0];
     if (ul.className === 'navigation') {
         ul.className += " responsive";
+        nav.style.backgroundColor = "#000";
     } else {
         ul.className = "navigation";
     }

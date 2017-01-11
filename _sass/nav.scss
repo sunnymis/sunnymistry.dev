@@ -8,7 +8,7 @@
     padding-top: 20px;
     padding-bottom: 10px;
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
+
 
     .header-title {
         position: relative;
@@ -129,6 +129,10 @@
             }
         }
     }
+}
+
+#sunny-name {
+    opacity: 0;
 }
 
 .hamburger-icon {
