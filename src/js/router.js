@@ -3,18 +3,30 @@
         var tag = window.location.hash.split('#')[1];
         filter(tag);
     }
+
     var nav = document.getElementsByClassName('navigation-header')[0];
     var sunnyNavTitle = document.getElementById('sunny-name');
+
+    if (window.location.pathname === "/blog/") {
+        nav.style.backgroundColor = "#000";
+        nav.style.removeProperty('transition');
+        sunnyNavTitle.style.removeProperty('transition');
+        sunnyNavTitle.style.opacity = "1";
+
+    }
+
     window.addEventListener('scroll',function(evt) {
-        console.log(window.pageYOffset);
-       if (window.pageYOffset >= 400) {
+       if (window.pageYOffset >= 400 && window.location.pathname !== '/blog/') {
+           console.log(window.location.pathname);
            nav.style.transition = "background-color 1s linear";
            nav.style.backgroundColor = "#000";
            sunnyNavTitle.style.transition = "opacity 1s linear";
            sunnyNavTitle.style.opacity = "1";
        } else {
-           nav.style.backgroundColor = "transparent";
-           sunnyNavTitle.style.opacity = "0";
+           if (window.location.pathname !== '/blog/') {
+               nav.style.backgroundColor = "transparent";
+               sunnyNavTitle.style.opacity = "0";
+           }
        }
     });
 })();
@@ -33,10 +45,8 @@ function onContactClick() {
 }
 
 function closeMobileNav() {
-    var ul = document.getElementsByClassName('side-nav-list')[0];
-    var socialMediaUl = document.getElementsByClassName('social-media-list')[0];
-    ul.className = "side-nav-list";
-    socialMediaUl.className = "social-media-list";
+    var ul = document.getElementsByClassName('navigation')[0];
+    ul.className = "navigation";
 }
 
 function onHamburgerClick() {

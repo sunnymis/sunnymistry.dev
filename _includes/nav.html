@@ -10,7 +10,7 @@
         <ul class="navigation-list">
             {% for page in pages | sort:"weight" %} {% if page.title and page.title != "Blog"%}
             <li>
-                <a href="{{ site.url | append: "#" | append: {{page.title | downcase}}">
+                <a href="{{ site.url | append: "#" | append: {{page.title | downcase}}" onclick="closeMobileNav()">
                     <span>{{ page.title }}</span>
                 </a>
             </li>
