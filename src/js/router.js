@@ -17,7 +17,7 @@
 
     window.addEventListener('scroll',function(evt) {
        if (window.pageYOffset >= 400 && window.location.pathname === '/') {
-           console.log(window.location.pathname);
+           //console.log(window.location.pathname);
            nav.style.transition = "background-color 1s linear";
            nav.style.backgroundColor = "#000";
            sunnyNavTitle.style.transition = "opacity 1s linear";
@@ -102,5 +102,5 @@ function setActive(tag) {
 }
 
 function redirectAndFilter(tag) {
-    console.log(tag);
+    //console.log(tag);
 }
