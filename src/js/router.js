@@ -7,7 +7,7 @@
     var nav = document.getElementsByClassName('navigation-header')[0];
     var sunnyNavTitle = document.getElementById('sunny-name');
 
-    if (window.location.pathname === "/blog/") {
+    if (window.location.pathname !== "/") {
         nav.style.backgroundColor = "#000";
         nav.style.removeProperty('transition');
         sunnyNavTitle.style.removeProperty('transition');
@@ -16,14 +16,14 @@
     }
 
     window.addEventListener('scroll',function(evt) {
-       if (window.pageYOffset >= 400 && window.location.pathname !== '/blog/') {
+       if (window.pageYOffset >= 400 && window.location.pathname === '/') {
            console.log(window.location.pathname);
            nav.style.transition = "background-color 1s linear";
            nav.style.backgroundColor = "#000";
            sunnyNavTitle.style.transition = "opacity 1s linear";
            sunnyNavTitle.style.opacity = "1";
        } else {
-           if (window.location.pathname !== '/blog/') {
+           if (window.location.pathname === '/') {
                nav.style.backgroundColor = "transparent";
                sunnyNavTitle.style.opacity = "0";
            }

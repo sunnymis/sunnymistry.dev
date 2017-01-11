@@ -1,298 +1,106 @@
 @import 'colors';
-#about-container {
-    padding-bottom: 100px;
 
-    /* Extra Small Devices, Phones */
-    @media only screen and (max-width : 480px) {
-        width: 100%;
-    }
+.about {
+    position: relative;
 
-    .about-header {
-        background-color: $white;
-        color: $black;
-        padding: 30px;
-        text-align: center;
-        font-family: Montserrat, sans-serif;
-        font-weight: 400;
-        h1 {
-            font-size: 3em;
+    .about-content {
+        width: 50%;
+        margin: 0 auto;
+        position: relative;
+
+        /* Large Devices, Wide Screens */
+        @media only screen and (max-width : 1440px) {
+            width: 75%;
         }
         /* Large Devices, Wide Screens */
         @media only screen and (max-width : 1200px) {
-            padding: 50px 0 0 0;
-        }
-        /* Small Devices, Tablets */
-        @media only screen and (max-width : 768px) {
-            padding: 50px 0 0 0;
-        }
-        /* Extra Small Devices, Phones */
-        @media only screen and (max-width : 480px) {
-            padding: 50px 0 0 0;
+            width: 100%;
         }
 
-    }
-
-    .about-secondary-header {
-        h2 {
-            text-align: center;
-            font-weight: normal;
-            margin: 50px 0 0 0;
-            font-size: 2em;
-
-        }
-        &:after {
-            content: '';
+        .sunny-image {
             display: inline-block;
-            width: 41%;
-            border-bottom: 2px solid #696969;
-            margin-left: 30%;
-            margin-bottom: 50px;
-            margin-top: 20px;
-        }
-    }
-
-    .skills-container {
-        width: 75%;
-        margin: 0 auto;
-        padding: 0;
-
-        h3 {
-            font-size: 1.5em;
-            font-weight: normal;
-        }
-        .skill-column {
-            display: inline-block;
-            width: 33%;
-            vertical-align: top;
-            text-align: center;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-            line-height: 3;
-        }
-
-    }
-
-
-    .timeline {
-        position: relative;
-        padding: 0 1px 100px 1px;
-        list-style-type: none;
-        margin: 0;
-
-        /* This styles the vertical bar */
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            height: 100%;
-            width: 5px;
-            background: $black;
-            z-index: 5;
+            width: 39%;
+            height: 500px;
+            background-image: url(../src/img/sunnyNoBG.png);
+            background-size: auto 500px;
+            background-repeat: no-repeat;
+            /* Large Devices, Wide Screens */
+            @media only screen and (max-width : 1440px) {
+                width: 320px;
+                margin-left: 80px;
+            }
+            /* Large Devices, Wide Screens */
+            @media only screen and (max-width : 1200px) {
+                margin: 0;
+                width: 30%;
+            }
             /* Small Devices, Tablets */
             @media only screen and (max-width : 768px) {
-                z-index: 1
+                width: 40%;
             }
             /* Extra Small Devices, Phones */
             @media only screen and (max-width : 480px) {
-                z-index: 1;
+                transform: translateY(-440px);
+                width: 80%;
+                margin-left: 30px;
+            }
+            /* Extra Small Devices, Phones */
+            @media only screen and (max-width : 375px) {
+                transform: translateY(-470px);
+                margin-left: 20px;
             }
         }
 
-        li {
+        .about-text {
+            width: 60%;
+            display: inline-block;
+            vertical-align: top;
             position: relative;
-            padding: 3em 0;
-            width: 1px;
-            margin: 0 auto;
+            top: 100px;
 
-            &:after {
-                content: '';
-                display: block;
-                height: 0;
-                padding-bottom: 200px;
-                clear: both;
-                /* Large Devices, Wide Screens */
-                @media only screen and (max-width : 1200px) {
-                    padding: 5em 0;
-                }
-                /* Small Devices, Tablets */
-                @media only screen and (max-width : 768px) {
-                    padding: 2em 0;
-                }
-                /* Extra Small Devices, Phones */
-                @media only screen and (max-width : 480px) {
-                    padding: 2em 0;
+            /* Large Devices, Wide Screens */
+            @media only screen and (max-width : 1200px) {
+                margin-left: 50px;
+            }
+            /* Small Devices, Tablets */
+            @media only screen and (max-width : 768px) {
+                width: 50%;
+            }
+            /* Extra Small Devices, Phones */
+            @media only screen and (max-width : 480px) {
+                transform: translateY(375px);
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                p {
+                    text-align: left;
+                    margin: 0 20px;
                 }
             }
 
-            .timeline-section {
-                position: absolute;
-                width: 400px;
-                border: 1px solid $border-gray;
-                border-radius: 2px;
-                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-                background-color: $white;
-                padding-bottom: 20px;
-                box-sizing: border-box;;
-
-                /* Large Devices, Wide Screens */
-                @media only screen and (max-width : 1200px) {
-                    width: 250px;
-                }
-                /* Small Devices, Tablets */
-                @media only screen and (max-width : 768px) {
-                    z-index: 3;
-                    width: 400px;
-                    position: relative;
-                    top: 0;
-                    left: 0;
-                }
-                /* Extra Small Devices, Phones */
-                @media only screen and (max-width : 480px) {
-                    z-index: 3;
-                    position: relative;
-                    width: 370px;
-                    top: 0;
-                    left: 0;
-                }
-                /* Really Extra Small Devices, Phones */
-                @media only screen and (max-width : 375px) {
-                    width: 350px;
-                }
-
-                /* This styles the circles in the timeline bar*/
-                &:before {
-                    content: '';
-                    position: absolute;
-                    display: block;
-                    width: 30px;
-                    height: 30px;
-                    background: $timeline-circle-color;
-                    border-radius: 50%;
-                    border: 3px solid $timeline-circle-border-color;
-                    z-index: 10;
-                }
-
-                .content-card {
-
-                    .content-card-title {
-                        text-align: center;
-                        font-weight: normal;
-                        font-size: 1.5em;
-                        &:after {
-                            content: '';
-                            display: block;
-                            border-bottom: 1px solid $border-gray;
-                            width: 75%;
-                            margin: 0 auto;
-                        }
-                    }
-
-                    .content-card-date {
-                        position: relative;
-                        top: -15px;
-                        left: 10px;
-                        font-style: italic;
-                        text-align: center;
-                        color: $card-date-color;
-                    }
-
-                    .content-card-description {
-                        font-size: 18px;
-                        box-sizing: border-box;
-                        padding: 0 20px;
-                        margin-bottom: 20px;
-                        line-height: 1.5em;
-                    }
-
-                    .content-card-skills-list {
-                        padding-left: 10px;
-                        text-align: center;
-                        span {
-                            display: inline-block;
-                            border: 1px solid $border-gray;
-                            background-color: $secondary-color;
-                            opacity: 0.8;
-                            color: $white;
-                            padding: 5px 10px;
-                            box-sizing: border-box;
-                            margin-right: 10px;
-                            margin-top: 10px;
-                        }
-                    }
-                }
+            h3 {
+                font-size: 2em;
+                margin-bottom: 0;
+                font-weight: normal;
             }
-
-            .timeline-section.right {
-                left: 100px;
-                &:before {
-                    top: 45%;
-                    left: -116px;
-                    /* Small Devices, Tablets */
-                    @media only screen and (max-width : 768px) {
-                        top: -20%;
-                        left: 41%;
-                    }
-                    /* Extra Small Devices, Phones */
-                    @media only screen and (max-width : 480px) {
-                        top: -20%;
-                        left: 45%;
-                    }
-                    /* Really Extra Small Devices, Phones */
-                    @media only screen and (max-width : 375px) {
-                        top: -20%;
-                        left: 47%;
-                    }
-                }
-
-                /* Small Devices, Tablets */
-                @media only screen and (max-width : 768px) {
-                    top: 50px;
-                    left: -180px;
-                }
-                /* Extra Small Devices, Phones */
-                @media only screen and (max-width : 480px) {
-                    top: 50px;
-                    left: -180px;
-                }
+            h4 {
+                font-size: 1.5em;
+                margin-top: 10px;
+                font-weight: normal;
+                margin-bottom: 50px;
             }
-
-            .timeline-section.left {
-                right: 100px;
-                &:before {
-                    position: absolute;
-                    top: 45%;
-                    right: -120px;
-                    /* Small Devices, Tablets */
-                    @media only screen and (max-width : 768px) {
-                        top: -20%;
-                        left: 41%;
-                    }
-                    /* Extra Small Devices, Phones */
-                    @media only screen and (max-width : 480px) {
-                        top: -20%;
-                        left: 45%;
-                    }
-                    /* Really Extra Small Devices, Phones */
-                    @media only screen and (max-width : 375px) {
-                        top: -20%;
-                        left: 47%;
-                    }
-                }
-                /* Small Devices, Tablets */
-                @media only screen and (max-width : 768px) {
-                    top: 50px;
-                    left: -180px;
-                }
-                /* Extra Small Devices, Phones */
-                @media only screen and (max-width : 480px) {
-                    top: 50px;
-                    left: -180px;
-                }
+            p {
+                display: inline-block;
+                font-size: 1.2em;
+                line-height: 1.5;
+                margin-bottom: 50px;
             }
-
+            a {
+                color: white;
+                padding: 20px 30px;
+                background-color: black;
+                border-radius: 3px;
+            }
         }
     }
 }
