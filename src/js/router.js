@@ -29,6 +29,13 @@
            }
        }
     });
+
+    var logoContainers = document.getElementsByClassName('logo-container');
+    Array.prototype.forEach.call(logoContainers,function(logoContainer) {
+        logoContainer.addEventListener('click', function() {
+            logoContainer.focus();
+        })
+    })
 })();
 function onAboutClick() {
     closeMobileNav();
