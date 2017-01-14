@@ -40,13 +40,13 @@
             }
             /* Extra Small Devices, Phones */
             @media only screen and (max-width : 480px) {
-                transform: translateY(-440px);
+                transform: translateY(-490px);
                 width: 80%;
                 margin-left: 30px;
             }
             /* Extra Small Devices, Phones */
             @media only screen and (max-width : 375px) {
-                transform: translateY(-470px);
+                transform: translateY(-540px);
                 margin-left: 20px;
             }
         }
@@ -56,11 +56,16 @@
             display: inline-block;
             vertical-align: top;
             position: relative;
-            top: 100px;
+            top: 60px;
+
 
             /* Large Devices, Wide Screens */
             @media only screen and (max-width : 1200px) {
                 margin-left: 50px;
+            }
+            /* Large Devices, Wide Screens */
+            @media only screen and (max-width : 1440px) {
+                top: 40px;
             }
             /* Small Devices, Tablets */
             @media only screen and (max-width : 768px) {
@@ -68,7 +73,7 @@
             }
             /* Extra Small Devices, Phones */
             @media only screen and (max-width : 480px) {
-                transform: translateY(375px);
+                transform: translateY(445px);
                 width: 100%;
                 margin: 0 auto;
                 text-align: center;
@@ -88,18 +93,31 @@
                 margin-top: 10px;
                 font-weight: normal;
                 margin-bottom: 50px;
+                /* Small Devices, Tablets */
+                @media only screen and (max-width : 768px) {
+                    margin-bottom: 30px;
+                }
             }
             p {
                 display: inline-block;
                 font-size: 1.2em;
                 line-height: 1.5;
                 margin-bottom: 50px;
+                /* Small Devices, Tablets */
+                @media only screen and (max-width : 768px) {
+                    font-size: 1em;
+                }
             }
             a {
                 color: white;
                 padding: 20px 30px;
                 background-color: black;
                 border-radius: 3px;
+                /* Small Devices, Tablets */
+                @media only screen and (max-width : 768px) {
+                    position: relative;
+                    top: -10px;
+                }
             }
         }
     }
