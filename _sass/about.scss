@@ -56,16 +56,18 @@
             display: inline-block;
             vertical-align: top;
             position: relative;
-            top: 60px;
-
-
-            /* Large Devices, Wide Screens */
-            @media only screen and (max-width : 1200px) {
-                margin-left: 50px;
+            top: 40px;
+            /* Very Large Devices, Wide Screens */
+            @media only screen and (max-width : 2560px) {
+                top: 40px;
             }
             /* Large Devices, Wide Screens */
             @media only screen and (max-width : 1440px) {
                 top: 40px;
+            }
+            /* Large Devices, Wide Screens */
+            @media only screen and (max-width : 1200px) {
+                margin-left: 50px;
             }
             /* Small Devices, Tablets */
             @media only screen and (max-width : 768px) {
