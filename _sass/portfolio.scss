@@ -135,6 +135,8 @@
                         width: 300px;
                     }
                     img {
+                        margin: 0 auto;
+                        display: block;
                         height: 250px;
                         width: 250px;
                         &.large-width {
