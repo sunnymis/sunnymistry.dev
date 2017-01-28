@@ -24,10 +24,17 @@
             background-image: url(../src/img/sunnyNoBG.png);
             background-size: auto 500px;
             background-repeat: no-repeat;
+
             /* Large Devices, Wide Screens */
             @media only screen and (max-width : 1440px) {
                 width: 320px;
                 margin-left: 80px;
+            }
+            @media
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi) {
+                /* Retina-specific stuff here */
+                margin-left: 0;
             }
             /* Large Devices, Wide Screens */
             @media only screen and (max-width : 1200px) {
