@@ -99,8 +99,7 @@
                     float: right;
                     width: 40%;
                     padding: 0 3em;
-                    vertical-align: top;
-                    margin-top: 70px;
+                    vertical-align: top;                    
                     &.left {
                         float: left;
                         /* Large Devices, Wide Screens */
@@ -140,7 +139,7 @@
                         height: 250px;
                         width: 250px;
                         &.large-width {
-                            width: 350px;
+                            width: 400px;
                             /* Large Devices, Wide Screens */
                             @media only screen and (max-width : 1200px) {
                                 width: 250px;
