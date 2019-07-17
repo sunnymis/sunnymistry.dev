@@ -26,7 +26,7 @@
       }
     }
 
-    li {
+    .timeline-item {
       position: relative;
       padding: 3em 0;
       width: 1px;
@@ -57,7 +57,7 @@
         width: 400px;
         border: 1px solid $border-gray;
         border-radius: 2px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        box-shadow:  0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
         background-color: $white;
         padding-bottom: 20px;
         box-sizing: border-box;;
@@ -103,49 +103,53 @@
         .content-card {
 
           .content-card-title {
-            text-align: center;
-            font-weight: normal;
-            font-size: 1.5em;
-            &:after {
-              content: '';
+            padding: 24px 0;
+            background-color: #3496FF;
+            color: #fff;
+
+            .employer,
+            .job-title {
               display: block;
-              border-bottom: 1px solid $border-gray;
-              width: 75%;
-              margin: 0 auto;
+              text-align: center;
+            }
+
+            .employer {
+              font-weight: bold;
+              font-size: 24px;
+            }
+
+            .job-title {
+              font-weight: normal;
+              font-size: 16px;
+              margin-top: 6px;
             }
           }
 
-          .content-card-date {
-            position: relative;
-            top: 7px;
-            left: 10px;
-            margin-bottom: 30px;
-            font-style: italic;
-            text-align: center;
-            color: $card-date-color;
-          }
+          .content-card-description {            
+            list-style-type: disc;
+            padding-left: 36px;
+            padding-right: 24px;
+            font-size: 16px;
 
-          .content-card-description {
-            font-size: 18px;
-            box-sizing: border-box;
-            padding: 0 20px;
-            margin-bottom: 20px;
-            line-height: 1.5em;
+            li {
+              margin-bottom: 12px;
+            }
           }
 
           .content-card-skills-list {
-            padding-left: 10px;
-            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 12px 24px;
+
             span {
               display: inline-block;
-              border: 1px solid $border-gray;
-              background-color: $black;
-              opacity: 0.8;
-              color: $white;
+              background-color: #00BD9D;
+              color: rgba(255,255,255,0.8);
               padding: 5px 10px;
               box-sizing: border-box;
-              margin-right: 10px;
-              margin-top: 10px;
+              margin-right: 12px;
+              margin-bottom: 12px;
+              border-radius: 18px;
             }
           }
         }
