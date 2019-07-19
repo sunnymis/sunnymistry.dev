@@ -6,7 +6,7 @@ const Timeline = () => {
     <section className="work">
         <div className="content-wrapper">
           <h2 className="section-title">Work History</h2>
-          <ul className="timeline">
+          <div className="timeline">
               <TimelineCard
                 employer="Policygenius"
                 jobTitle="Software Engineer"
@@ -65,7 +65,7 @@ const Timeline = () => {
                 ]}
                 align="left"
               />
-          </ul>
+          </div>
         </div>
     </section>
   )
