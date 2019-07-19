@@ -44,7 +44,7 @@
     border-radius: 50%;
     box-sizing: border-box;
     border: 1px solid #00Bd9D;
-    z-index: 10;
+    z-index: 2;
     box-shadow:  6px 6px 8px 0 hsla(0, 0%, 0%, 0.2);
   }
 
@@ -109,6 +109,7 @@
       margin-right: 12px;
       margin-bottom: 12px;
       border-radius: 18px;
+      font-size: 16px;
     }
   }
 }
