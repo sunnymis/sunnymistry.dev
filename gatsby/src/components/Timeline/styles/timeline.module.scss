@@ -1,0 +1,226 @@
+.work {
+  .timeline {
+    position: relative;
+    padding: 0 1px 100px 1px;
+    list-style-type: none;
+    margin: 0;
+
+    /* This styles the vertical bar */
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      height: 100%;
+      width: 5px;
+      background: #000;
+      z-index: 5;
+      /* Small Devices, Tablets */
+      @media only screen and (max-width : 768px) {
+        z-index: 1
+      }
+      /* Extra Small Devices, Phones */
+      @media only screen and (max-width : 480px) {
+        z-index: 1;
+      }
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 3em 0;
+      width: 1px;
+      margin: 0 auto;
+
+      &:after {
+        content: '';
+        display: block;
+        height: 0;
+        padding-bottom: 200px;
+        clear: both;
+        /* Large Devices, Wide Screens */
+        @media only screen and (max-width : 1200px) {
+          padding: 5em 0;
+        }
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 768px) {
+          padding: 2em 0;
+        }
+        /* Extra Small Devices, Phones */
+        @media only screen and (max-width : 480px) {
+          padding: 2em 0;
+        }
+      }
+
+      .timeline-section {
+        position: absolute;
+        width: 400px;
+        border: 1px solid #e8e8e8;
+        border-radius: 2px;
+        box-shadow:  0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+        background-color: #fff;
+        padding-bottom: 20px;
+        box-sizing: border-box;;
+
+        /* Large Devices, Wide Screens */
+        @media only screen and (max-width : 1200px) {
+          width: 250px;
+        }
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 768px) {
+          z-index: 3;
+          width: 400px;
+          position: relative;
+          top: 0;
+          left: 0;
+        }
+        /* Extra Small Devices, Phones */
+        @media only screen and (max-width : 480px) {
+          z-index: 3;
+          position: relative;
+          width: 370px;
+          top: 0;
+          left: 0;
+        }
+        /* Really Extra Small Devices, Phones */
+        @media only screen and (max-width : 375px) {
+          width: 350px;
+        }
+
+        /* This styles the circles in the timeline bar*/
+        &:before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 30px;
+          height: 30px;
+          background: #fff;
+          border-radius: 50%;
+          border: 3px solid #000;
+          z-index: 10;
+        }
+
+        .content-card {
+
+          .content-card-title {
+            padding: 24px 0;
+            background-color: #3496FF;
+            color: #fff;
+
+            .employer,
+            .job-title {
+              display: block;
+              text-align: center;
+            }
+
+            .employer {
+              font-weight: bold;
+              font-size: 24px;
+            }
+
+            .job-title {
+              font-weight: normal;
+              font-size: 16px;
+              margin-top: 6px;
+            }
+          }
+
+          .content-card-description {            
+            list-style-type: disc;
+            padding-left: 36px;
+            padding-right: 24px;
+            font-size: 16px;
+
+            li {
+              margin-bottom: 12px;
+            }
+          }
+
+          .content-card-skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 12px 24px;
+
+            span {
+              display: inline-block;
+              background-color: #00BD9D;
+              color: rgba(255,255,255,0.8);
+              padding: 5px 10px;
+              box-sizing: border-box;
+              margin-right: 12px;
+              margin-bottom: 12px;
+              border-radius: 18px;
+            }
+          }
+        }
+      }
+
+      .timeline-section.right {
+        left: 100px;
+        &:before {
+          top: 45%;
+          left: -113px;
+          /* Small Devices, Tablets */
+          @media only screen and (max-width : 768px) {
+            top: -25%;
+            left: 166px;
+          }
+          /* Extra Small Devices, Phones */
+          @media only screen and (max-width : 480px) {
+            top: -26%;
+            left: 167px;
+          }
+          /* Really Extra Small Devices, Phones */
+          @media only screen and (max-width : 375px) {
+            top: -26%;
+            left: 167px;
+          }
+        }
+
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 768px) {
+          top: 50px;
+          left: -180px;
+        }
+        /* Extra Small Devices, Phones */
+        @media only screen and (max-width : 480px) {
+          top: 50px;
+          left: -180px;
+        }
+      }
+
+      .timeline-section.left {
+        right: 100px;
+        &:before {
+          position: absolute;
+          top: 45%;
+          right: -118px;
+          /* Small Devices, Tablets */
+          @media only screen and (max-width : 768px) {
+            top: -25%;
+            left: 166px;
+          }
+          /* Extra Small Devices, Phones */
+          @media only screen and (max-width : 480px) {
+            top: -26%;
+            left: 167px;
+          }
+          /* Really Extra Small Devices, Phones */
+          @media only screen and (max-width : 375px) {
+            top: -26%;
+            left: 167px;
+          }
+        }
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 768px) {
+          top: 50px;
+          left: -180px;
+        }
+        /* Extra Small Devices, Phones */
+        @media only screen and (max-width : 480px) {
+          top: 50px;
+          left: -180px;
+        }
+      }
+    }
+  }
+}

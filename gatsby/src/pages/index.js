@@ -1,4 +1,5 @@
-import React from "react"
-import styles from './index.module.scss';
+import React from "react";
 
-export default () => <div className={styles.container}>Hello world!</div>
+import Timeline from '../components/Timeline';
+
+export default () => <div className="container">Hello world!<Timeline /></div>
