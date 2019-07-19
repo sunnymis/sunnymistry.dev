@@ -1,3 +1,8 @@
+h1, h2 {
+  text-align: center;
+}
+
+
 #mobile-nav {
   display: flex;
   justify-content: space-between;
@@ -49,29 +54,29 @@
 
 #desktop-nav {
   display: none;
-  justify-content: center;
-  margin: 36px 0;
-
-  &:before, &:after {
-    content: '';
-    width: 100px;
-    border-top: 1px solid #000;
-    position: relative;
-    top: 18px;
-    right: 10px;
-  }
-
-  a {
-    padding-right: 16px;
-  }
 }
 
 @media only screen and (min-width : 1024px) {  
-  #desktop-nav {
-    display: block;
-  }
-
   #mobile-nav {
     display: none;
+  }
+  
+  #desktop-nav {
+    display: flex;
+    justify-content: center;
+    margin: 36px 0;
+
+    &:before, &:after {
+      content: '';
+      width: 100px;
+      border-top: 1px solid #000;
+      position: relative;
+      top: 18px;
+      right: 10px;
+    }
+
+    a {
+      padding-right: 16px;
+    }
   }
 }

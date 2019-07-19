@@ -37,18 +37,16 @@ const Nav = () => {
   ];
 
   return (
-    <React.Fragment>
-      <div id="desktop-nav">
-        <h1>Sunny Mistry</h1>
-        <h2>Software Engineer</h2>
+    <React.Fragment>  
+      <h1>Sunny Mistry</h1>
+      <h2>Software Engineer</h2>
 
-        <nav>
-         {
-           navItems.map(item => desktopNavitem(item))
-         }
-        </nav>
-      </div>
-
+      <nav id="desktop-nav">
+        {
+          navItems.map(item => desktopNavitem(item))
+        }
+      </nav>
+  
       <nav id="mobile-nav">
         {
           navItems.map(item => mobileNavItem(item))
