@@ -12,15 +12,14 @@
     "Mistry"
   ],
   "author": "Sunny Mistry",
-  "license": "",
   "devDependencies": {
-    "browser-sync": "^2.18.2",
-    "child_process": "^1.0.2",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.13",
-    "gulp-concat": "^2.6.1",
-    "gulp-concat-css": "^2.3.0",
-    "gulp-sass": "^2.3.2",
-    "webpack": "^1.13.3"
+      "browser-sync": "^2.18.2",
+      "child_process": "^1.0.2",
+      "gulp": "^3.9.1",
+      "gulp-clean-css": "^2.0.13",
+      "gulp-concat": "^2.6.1",
+      "gulp-concat-css": "^2.3.0",
+      "gulp-sass": "^2.3.2",
+      "webpack": "^1.13.3"
   }
 }
