@@ -75,8 +75,18 @@ h1, h2 {
       right: 10px;
     }
 
-    a {
-      padding-right: 16px;
+    .desktop-menu-text {
+      text-decoration: none;
+      color: black;
+      box-sizing: border-box;
+      margin-right: 16px;
+    
+      &:hover,
+      &.selected {
+        color: #3496FF;
+        border: 1px solid transparent;
+        border-bottom-color: #3496FF;
+      }
     }
   }
 }
