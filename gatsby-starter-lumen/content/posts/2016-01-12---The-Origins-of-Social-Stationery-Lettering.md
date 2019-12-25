@@ -46,6 +46,24 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 }
 ```
 
+```js
+export class Something extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    const abc = 5; 
+
+    return (
+      <div>
+        Hello World
+      </div>
+    )
+  }
+}
+```
+
 Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
 
 ![Test SVG](/media/cpu.svg)

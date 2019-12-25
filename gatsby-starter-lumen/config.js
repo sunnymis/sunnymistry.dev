@@ -3,7 +3,7 @@
 module.exports = {
   url: 'https://www.sunnymistry.dev',
   pathPrefix: '/',
-  title: 'Blog by Sunny Mistry',
+  title: 'Sunny Mistry',
   subtitle: 'Software Engineer',
   copyright: '© All rights reserved.',
   disqusShortname: '',
@@ -18,15 +18,15 @@ module.exports = {
       label: 'About',
       path: '/pages/about'
     },
-    {
-      label: 'Contact',
-      path: '/pages/contacts'
-    }
+    // {
+    //   label: 'Contact',
+    //   path: '/pages/contacts'
+    // }
   ],
   author: {
     name: 'Sunny Mistry',
     photo: '/profile-photo.jpg',
-    bio: 'I\'m a Software Engineer based in New York who loves building web apps and weightlifting.',
+    bio: 'Software Engineer | Web Dev',
     contacts: {
       email: 'sunny.v.mistry@gmail.com',
       github: 'sunnymis',
