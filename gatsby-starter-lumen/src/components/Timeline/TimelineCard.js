@@ -3,6 +3,7 @@ import React from 'react';
 const TimelineCard = (props) => {
   const {
     employer,
+    timePeriod,
     jobTitle,
     skills,
     content,
@@ -15,6 +16,7 @@ const TimelineCard = (props) => {
       <div className="timeline-section">
       <div className="circle"/>
       <div className="timeline-item-header">
+        <span className="time-period">{ timePeriod }</span>
         <span className="employer">{ employer }</span>
         <span className="job-title">{ jobTitle }</span>
       </div>  
