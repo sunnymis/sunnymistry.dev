@@ -6,6 +6,11 @@
   padding: 0 15px;
   margin: 0 auto;
 
+  &__date {
+    font-style: italic;
+    color: $color-gray;
+    text-align: center;
+  }
   &__title {
     font-size: $typographic-base-font-size * 2;
     max-width: $layout-post-width;
@@ -66,7 +71,7 @@
       font-size: $typographic-base-font-size * 3;
       @include line-height(2.25);
       @include margin-top(2.25);
-      @include margin-bottom(1.5)
+      @include margin-bottom(1)
     }
 
     &__body {
