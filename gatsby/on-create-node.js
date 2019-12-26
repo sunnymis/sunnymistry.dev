@@ -24,8 +24,13 @@ const onCreateNode = ({ node, actions, getNode }) => {
     }
 
     if (node.frontmatter.tags) {
-      const tagSlugs = node.frontmatter.tags.map((tag) => `/tag/${_.kebabCase(tag)}/`);
-      createNodeField({ node, name: 'tagSlugs', value: tagSlugs });
+      if (node.frontmatter.template === 'til') {
+        const tilTagSlugs = node.frontmatter.tags.map((tag) => `/til/tag/${_.kebabCase(tag)}/`);
+        createNodeField({ node, name: 'tilTagSlugs', value: tilTagSlugs });
+      } else {
+        const tagSlugs = node.frontmatter.tags.map((tag) => `/tag/${_.kebabCase(tag)}/`);
+        createNodeField({ node, name: 'tagSlugs', value: tagSlugs });
+      }
     }
 
     if (node.frontmatter.category) {
