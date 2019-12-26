@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TagsListTemplate renders correctly 1`] = `
+exports[`CategoriesListTemplate renders correctly 1`] = `
 <div
   className="layout"
 >
@@ -19,9 +19,7 @@ exports[`TagsListTemplate renders correctly 1`] = `
           <img
             alt="Test name"
             className="author__photo"
-            height="75"
             src="/test.jpg"
-            width="75"
           />
         </a>
         <h2
@@ -234,7 +232,7 @@ exports[`TagsListTemplate renders correctly 1`] = `
       <h1
         className="page__title"
       >
-        Tags
+        Categories
       </h1>
       <div
         className="page__body"
@@ -242,7 +240,7 @@ exports[`TagsListTemplate renders correctly 1`] = `
         <ul>
           <li>
             <a
-              href="/tag/test-0/"
+              href="/category/test-0/"
             >
               test_0
                (
@@ -252,7 +250,7 @@ exports[`TagsListTemplate renders correctly 1`] = `
           </li>
           <li>
             <a
-              href="/tag/test-1/"
+              href="/category/test-1/"
             >
               test_1
                (

@@ -9,6 +9,11 @@ exports[`Content renders correctly 1`] = `
   >
     test
   </h1>
+  <p
+    className="content__date"
+  >
+    December 26, 2019
+  </p>
   <div
     className="content__body"
     dangerouslySetInnerHTML={

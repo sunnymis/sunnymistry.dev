@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IndexTemplate renders correctly 1`] = `
+exports[`CategoryTemplate renders correctly 1`] = `
 <div
   className="layout"
 >
@@ -19,12 +19,10 @@ exports[`IndexTemplate renders correctly 1`] = `
           <img
             alt="Test name"
             className="author__photo"
-            height="75"
             src="/test.jpg"
-            width="75"
           />
         </a>
-        <h1
+        <h2
           className="author__title"
         >
           <a
@@ -33,7 +31,7 @@ exports[`IndexTemplate renders correctly 1`] = `
           >
             Test name
           </a>
-        </h1>
+        </h2>
         <p
           className="author__subtitle"
         >
@@ -231,6 +229,11 @@ exports[`IndexTemplate renders correctly 1`] = `
     <div
       className="page__inner"
     >
+      <h1
+        className="page__title"
+      >
+        test
+      </h1>
       <div
         className="page__body"
       >
@@ -252,16 +255,6 @@ exports[`IndexTemplate renders correctly 1`] = `
               <span
                 className="feed__item-meta-divider"
               />
-              <span
-                className="feed__item-meta-category"
-              >
-                <a
-                  className="feed__item-meta-category-link"
-                  href="/test"
-                >
-                  test
-                </a>
-              </span>
             </div>
             <h2
               className="feed__item-title"
@@ -278,12 +271,6 @@ exports[`IndexTemplate renders correctly 1`] = `
             >
               test_0
             </p>
-            <a
-              className="feed__item-readmore"
-              href="/test_0"
-            >
-              Read
-            </a>
           </div>
           <div
             className="feed__item"
@@ -300,16 +287,6 @@ exports[`IndexTemplate renders correctly 1`] = `
               <span
                 className="feed__item-meta-divider"
               />
-              <span
-                className="feed__item-meta-category"
-              >
-                <a
-                  className="feed__item-meta-category-link"
-                  href="/test"
-                >
-                  test
-                </a>
-              </span>
             </div>
             <h2
               className="feed__item-title"
@@ -326,12 +303,6 @@ exports[`IndexTemplate renders correctly 1`] = `
             >
               test_1
             </p>
-            <a
-              className="feed__item-readmore"
-              href="/test_1"
-            >
-              Read
-            </a>
           </div>
         </div>
         <div
