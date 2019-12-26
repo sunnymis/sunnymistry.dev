@@ -8,6 +8,7 @@ module.exports = {
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
+  tilPerPage: 2,
   googleAnalyticsId: '', // TODO ADD THIS
   menu: [
     {
@@ -18,10 +19,10 @@ module.exports = {
       label: 'About',
       path: '/pages/about'
     },
-    // {
-    //   label: 'Contact',
-    //   path: '/pages/contacts'
-    // }
+    {
+      label: 'Today I Learned',
+      path: '/til'
+    }
   ],
   author: {
     name: 'Sunny Mistry',
