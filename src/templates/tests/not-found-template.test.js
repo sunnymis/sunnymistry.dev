@@ -2,20 +2,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { useStaticQuery, StaticQuery } from 'gatsby';
-import CategoryTemplate from './category-template';
-import siteMetadata from '../../jest/__fixtures__/site-metadata';
-import allMarkdownRemark from '../../jest/__fixtures__/all-markdown-remark';
-import pageContext from '../../jest/__fixtures__/page-context';
+import NotFoundTemplate from '../not-found-template';
+import siteMetadata from '../../../jest/__fixtures__/site-metadata';
 import type { RenderCallback } from '../types';
 
-describe('CategoryTemplate', () => {
-  const props = {
-    data: {
-      ...allMarkdownRemark
-    },
-    ...pageContext
-  };
-
+describe('NotFoundTemplate', () => {
   beforeEach(() => {
     StaticQuery.mockImplementationOnce(
       ({ render }: RenderCallback) => (
@@ -26,7 +17,7 @@ describe('CategoryTemplate', () => {
   });
 
   it('renders correctly', () => {
-    const tree = renderer.create(<CategoryTemplate {...props} />).toJSON();
+    const tree = renderer.create(<NotFoundTemplate />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
