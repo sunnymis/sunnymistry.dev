@@ -1,4 +1,3 @@
-// @flow strict
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
@@ -7,14 +6,8 @@ import TILFeed from '../components/TILFeed';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
 import { useSiteMetadata } from '../hooks';
-import type { PageContext, AllMarkdownRemark } from '../types';
 
-type Props = {
-  data: AllMarkdownRemark,
-  pageContext: PageContext
-};
-
-const TilTemplate = ({ data, pageContext }: Props) => {
+const TilTemplate = ({ data, pageContext }) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
 
   const {
