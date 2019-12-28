@@ -3,7 +3,7 @@ import moment from 'moment';
 import styles from '../Feed/Feed.module.scss';
 import Tags from '../Post/Tags';
 
-const TILFeed = ({ edges, html }) => (
+const TILFeed = ({ edges }) => (
   <div className={styles['feed']}>
     {
       edges.map((edge) => {
@@ -24,7 +24,9 @@ const TILFeed = ({ edges, html }) => (
             <div dangerouslySetInnerHTML={{ __html: html }} />
 
             {
-              frontmatter.tags && tilTagSlugs && <Tags tags={frontmatter.tags} tagSlugs={tilTagSlugs} />
+              frontmatter.tags && tilTagSlugs && (
+                <Tags tags={frontmatter.tags} tagSlugs={tilTagSlugs} />
+              )
             }
           </div>
         );

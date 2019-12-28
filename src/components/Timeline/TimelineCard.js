@@ -10,7 +10,7 @@ const TimelineCard = (props) => {
     align,
   } = props;
 
-  const timelineItemClasses = `timeline-item ${align}`
+  const timelineItemClasses = `timeline-item ${align}`;
   return (
     <div className={timelineItemClasses}>
       <div className="timeline-section">
@@ -19,15 +19,15 @@ const TimelineCard = (props) => {
         <span className="time-period">{ timePeriod }</span>
         <span className="employer">{ employer }</span>
         <span className="job-title">{ jobTitle }</span>
-      </div>  
+      </div>
       <div className="content-card-skills-list">
         {
-          skills.map(skill => <span>{skill}</span>)
+          skills.map((skill) => <span>{skill}</span>)
         }
       </div>
       <ul className="content-card-description">
         {
-          content.map(description => <li>{ description }</li>)
+          content.map((description) => <li>{ description }</li>)
         }
       </ul>
       </div>

@@ -1,9 +1,8 @@
-import React from "react";
+import React from 'react';
 import './timeline.scss';
 import TimelineCard from './TimelineCard';
 
-const Timeline = () => {
-  return (    
+const Timeline = () => (
     <section className="timeline">
         <TimelineCard
           employer="Policygenius"
@@ -36,10 +35,10 @@ const Timeline = () => {
           employer="University at Buffalo"
           timePeriod="August 2011 - May 2016"
           jobTitle="Computer Science Major"
-          skills={['C', 'C++', 'Java',]}
+          skills={['C', 'C++', 'Java']}
           content={[
-            "Bachelor's of Science in Computer Science.",
-            "Master's of Science in Computer Science"
+            'Bachelor\'s of Science in Computer Science.',
+            'Master\'s of Science in Computer Science'
           ]}
           align="right"
         />
@@ -49,8 +48,8 @@ const Timeline = () => {
           jobTitle="Software Engineer Intern"
           skills={['C#', 'JavaScript', 'ASP.NET', 'MySQL']}
           content={[
-            "Built feature which enabled a specific customer base to extend their medical insurance to their dependents",
-            "Developed feature requests in both frontend and backend for an ASP.NET web application",
+            'Built feature which enabled a specific customer base to extend their medical insurance to their dependents',
+            'Developed feature requests in both frontend and backend for an ASP.NET web application',
           ]}
           align="left"
         />
@@ -60,8 +59,8 @@ const Timeline = () => {
           jobTitle="Software Engineer Intern"
           skills={['C#', 'MySQL']}
           content={[
-            "Developed and led a team to build a desktop application which enabled users to monitor the status of integrated circuit production in relation to their schedules near real time",
-            "Effectively communicated with engineering managers and customers to provide an exceptional product that satisfies requirements from multiple clients"
+            'Developed and led a team to build a desktop application which enabled users to monitor the status of integrated circuit production in relation to their schedules near real time',
+            'Effectively communicated with engineering managers and customers to provide an exceptional product that satisfies requirements from multiple clients'
           ]}
           align="right"
         />
@@ -71,13 +70,12 @@ const Timeline = () => {
           jobTitle="Software Engineer Intern"
           skills={['C#', 'MySQL']}
           content={[
-            "Developed an inventory management program to enable employees to see the status of their stockrooms",
-            "Implemented a cleaner, more intuitive user interface"
+            'Developed an inventory management program to enable employees to see the status of their stockrooms',
+            'Implemented a cleaner, more intuitive user interface'
           ]}
           align="left"
         />
     </section>
-  )
-};
+);
 
 export default Timeline;

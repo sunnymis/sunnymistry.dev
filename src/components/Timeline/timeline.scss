@@ -96,17 +96,16 @@
   }
 
   .content-card-description {            
-    list-style-type: disc;
+    list-style: none;
     padding-left: 36px;
     padding-right: 24px;
     font-size: 16px;
-    list-style: none;
 
     li {
       margin-bottom: 12px;
 
       &:before {
-        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        content: '\2022';  /* Add content: \2022 is the CSS Code/unicode for a bullet */
         color: $color-secondary; /* Change the color */
         font-weight: bold; /* If you want it to be bold */
         display: inline-block; /* Needed to add space between the bullet and the text */

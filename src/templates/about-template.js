@@ -9,7 +9,6 @@ import Timeline from '../components/Timeline';
 
 const AboutTemplate = ({ data }) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
-  const { html: pageBody } = data.markdownRemark;
   const { frontmatter } = data.markdownRemark;
   const { title: pageTitle, description: pageDescription, socialImage } = frontmatter;
   const metaDescription = pageDescription !== null ? pageDescription : siteSubtitle;
@@ -20,7 +19,7 @@ const AboutTemplate = ({ data }) => {
       <Page title="About Me">
         <h2>Who am I?</h2>
         <p>
-          Hey 👋! I am a Software Engineer based in New York with a passion for building incredible web applications. Currently I am a developer at Policygenius, where I am building full stack web apps in React, Ruby on Rails, and Go. Outside of work you can find me at the gym, picking up heavy things and putting them back down. <br /> <br />If you want to get to know more about me or want to work on a project together, feel free to get in touch via email or LinkedIn!
+          { 'Hey 👋! I am a Software Engineer based in New York with a passion for building incredible web applications. Currently I am a developer at Policygenius, where I am building full stack web apps in React, Ruby on Rails, and Go. Outside of work you can find me at the gym, picking up heavy things and putting them back down. <br /> <br />If you want to get to know more about me or want to work on a project together, feel free to get in touch via email or LinkedIn!' /* eslint-disable-line max-len */ }
         </p>
         <h2>Work Experience</h2>
         <Timeline />
