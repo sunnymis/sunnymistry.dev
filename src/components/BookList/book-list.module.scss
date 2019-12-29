@@ -1,0 +1,13 @@
+.book-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.book {
+  max-width: 250px;
+  max-height: 300px;
+  margin-bottom: 36px;
+  margin-right: 18px;
+}
