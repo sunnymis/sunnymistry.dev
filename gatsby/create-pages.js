@@ -70,6 +70,12 @@ const createPages = async ({ graphql, actions }) => {
         component: path.resolve('./src/templates/about-template.js'),
         context: { slug: edge.node.fields.slug }
       });
+    } else if (_.get(edge, 'node.frontmatter.template') === 'books') {
+      createPage({
+        path: edge.node.fields.slug,
+        component: path.resolve('./src/templates/book-template.js'),
+        context: { slug: edge.node.fields.slug }
+      });
     }
   });
 
