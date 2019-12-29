@@ -1,3 +1,6 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
 .book-list {
   display: flex;
   flex-direction: row;
@@ -9,5 +12,10 @@
   max-width: 250px;
   max-height: 300px;
   margin-bottom: 36px;
-  margin-right: 18px;
+}
+
+@include breakpoint-md {
+  .book {
+    margin-right: 18px;
+  }
 }
