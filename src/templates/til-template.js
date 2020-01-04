@@ -52,7 +52,6 @@ export const query = graphql`
           fields {
             tilTagSlugs
             slug
-            categorySlug
           }
           frontmatter {
             title

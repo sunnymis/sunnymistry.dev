@@ -57,12 +57,10 @@ export const query = graphql`
           html,
           fields {
             slug
-            categorySlug
           }
           frontmatter {
             title
             date
-            category
             description
           }
         }
