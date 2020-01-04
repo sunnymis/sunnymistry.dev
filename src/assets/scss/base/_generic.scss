@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  margin: 0 0 0 calc(100vw - 100%);
+  margin: 0 0 0 15px;
   font-family: $typographic-font-family;
   color: $typographic-base-font-color;
   line-height: $typographic-base-line-height;
@@ -16,6 +16,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: overlay;
 }
 
 h1,
@@ -32,7 +33,7 @@ h1 {
   font-size: $typographic-base-font-size * 2.5;
   @include line-height(2);
   @include margin-top(4);
-  @include margin-bottom(1);
+  @include margin-bottom(0.5);
 }
 
 h2 {

@@ -11,16 +11,9 @@ const Author = ({ author, isIndex }) => (
         alt={author.name}
       />
     </Link>
-
-    { isIndex === true ? (
-      <h1 className={styles['author__title']}>
-        <Link className={styles['author__title-link']} to="/">{author.name}</Link>
-      </h1>
-    ) : (
-      <h2 className={styles['author__title']}>
-        <Link className={styles['author__title-link']} to="/">{author.name}</Link>
-      </h2>
-    )}
+    <h1 className={styles['author__title']}>
+      <Link className={styles['author__title-link']} to="/">{author.name}</Link>
+    </h1>
     <p className={styles['author__subtitle']}>{author.bio}</p>
   </div>
 );
