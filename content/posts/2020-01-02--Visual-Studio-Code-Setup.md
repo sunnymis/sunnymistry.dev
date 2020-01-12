@@ -8,7 +8,7 @@ tags:
   - "Development"
   - "Tools"
 description: "A breakdown of my Visual Studio Code setup, including themes, fonts, and extensions."
-socialImage: "/media/image-2.jpg"
+socialImage: "/profile-photo.jpg"
 ---
 
 ## Theme
