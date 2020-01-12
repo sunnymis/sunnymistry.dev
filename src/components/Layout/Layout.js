@@ -26,6 +26,7 @@ const Layout = ({
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={metaImageUrl} />
+        <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:100,300,400,700,900&display=swap" rel="stylesheet" />
       </Helmet>
       {children}
     </div>
