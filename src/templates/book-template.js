@@ -5,7 +5,9 @@ import Sidebar from '../components/Sidebar';
 import Page from '../components/Page';
 import BookList from '../components/BookList';
 import { useSiteMetadata } from '../hooks';
-import { books2019, books2018 } from '../constants/books';
+import {
+  books2020, books2019, books2018, books2017AndBefore
+} from '../constants/books';
 
 const BookTemplate = ({ data }) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
@@ -17,13 +19,19 @@ const BookTemplate = ({ data }) => {
     <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImage} >
       <Sidebar />
       <Page title="Books">
-        <p style={{ fontSize: '18px' }}>A collection of books I've read.</p>
+        <p style={{ fontSize: '18px' }}>A collection of notable books I've read.</p>
+
+        <h2>2020</h2>
+        <BookList books={books2020} />
 
         <h2>2019</h2>
-       <BookList books={books2019} />
+        <BookList books={books2019} />
 
         <h2>2018</h2>
         <BookList books={books2018} />
+
+        <h2>2017 and Before</h2>
+        <BookList books={books2017AndBefore} />
       </Page>
     </Layout>
   );
