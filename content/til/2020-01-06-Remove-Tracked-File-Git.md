@@ -1,5 +1,5 @@
 ---
-title: Remove Tracked Files from Git
+title: Remove Tracked Files From Git
 date: "2020-01-11"
 template: "til"
 draft: false
