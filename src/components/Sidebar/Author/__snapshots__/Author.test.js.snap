@@ -13,7 +13,7 @@ exports[`Author renders correctly 1`] = `
       src="/photo.jpg"
     />
   </a>
-  <h2
+  <h1
     className="author__title"
   >
     <a
@@ -22,7 +22,7 @@ exports[`Author renders correctly 1`] = `
     >
       test
     </a>
-  </h2>
+  </h1>
   <p
     className="author__subtitle"
   >
