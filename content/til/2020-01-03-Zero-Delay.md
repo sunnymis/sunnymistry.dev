@@ -4,7 +4,6 @@ date: "2020-01-03"
 template: "til"
 draft: false
 slug: "zero-delays"
-category: ""
 tags:
   - "javascript"
 ---

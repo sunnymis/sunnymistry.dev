@@ -4,7 +4,6 @@ date: "2020-01-11"
 template: "til"
 draft: false
 slug: "remove-tracked-file-from-git"
-category: ""
 tags:
   - "git"
 ---
