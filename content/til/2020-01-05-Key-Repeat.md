@@ -4,7 +4,6 @@ date: "2020-01-05"
 template: "til"
 draft: false
 slug: "increase-mac-keyboard-speed"
-category: ""
 tags:
   - "mac"
 ---
