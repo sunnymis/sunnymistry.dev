@@ -58,6 +58,17 @@
 
     }
 
+    /* Inline Code Theme Override */
+    :not(pre) > code[class*='language-'] {
+      padding: 0.1em;
+      border-radius: 0.3em;
+      color: #000;
+      background: #f0f0f0;
+      font-family: 'Monaco';
+      white-space: pre-wrap;
+      text-shadow: none;
+    }
+
   }
 
 }
