@@ -133,7 +133,9 @@ Save and source your `.vimrc`.
 
 Now that the file is saved and Vim is aware of the new contents of the file, we can install the plugin. Run this command from Vim:
 
-`:PlugInstall`
+```
+:PlugInstall
+```
 
 And that's it! It's that easy to install plugins in Vim using vim-plug
 
