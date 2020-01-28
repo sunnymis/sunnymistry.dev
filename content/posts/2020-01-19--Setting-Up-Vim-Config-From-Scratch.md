@@ -416,6 +416,7 @@ Vim has some builtin settings you can toggle on and off. Below are a list of the
 ```js
 set ruler // displays line number and column number in the bottom right corner
 set hlsearch // highlight search results when searching with /
+set ignorecase // ignore case sensitivity when searching with /
 set number // show line numbers
 set backspace=indent,eol,start // enables backspace key
 set splitbelow // when splitting horizontally, show split window on bottom
