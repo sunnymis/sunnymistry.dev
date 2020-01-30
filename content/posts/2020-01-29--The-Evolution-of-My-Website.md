@@ -11,9 +11,9 @@ socialImage: "/profile-photo.jpg"
 ---
 
 When I started programming I was mostly writing backend code. Most of the courses I took in college required us to write programs in C or 
-Java. During my summer internships I wrote desktop applications in C# with a MySQL database. While working on a desktop app in the the 
-summer of 2015, app, I realized that what I enjoyed most about building it was creating the user interface. I remembered how much I enjoyed 
-he intro to HTML class I took in high school where I built websites using the `<table>`  element. This is when I decided I wanted to push my 
+Java. During my summer internships I wrote desktop applications in C# with a MySQL database. While working on a desktop app in the 
+summer of 2015, I realized that what I enjoyed most about building it was creating the user interface. I remembered how much I enjoyed 
+the intro to HTML class I took in high school where I built websites using the `<table>`  element. This is when I decided I wanted to push my 
 career towards frontend web development.
 
 
@@ -21,9 +21,9 @@ career towards frontend web development.
 
 That summer, I built my first website. It comprised of four full width, full height screens with wallpaper background.
 There was a title screen with my name and description, an about me screen with a link to my resume, a screen that showed I was a 
-full stack developer, and lastly, a contact me screen. The site included a feature which hijacked the native browser scroll and 
+full stack developer, and lastly, a contact me screen. The site included a feature that hijacked the native browser scroll and 
 scrolled down just enough to show the next screen. The subtitle under my name rotated through 3-4 phrases and animated in a way that 
-looked as if it was being typed across the page. Yes, the wallpaper size photos of me was a bit too much. The stock photos of the laptop
+looked as if it was being typed across the page. Yes, the wallpaper size photos of me were a bit too much. The stock photos of the laptop
 and mug were taken by me.
 
 ![My Website Version 1.0](/media/the-evolution-of-my-website/version-1.0.png)
@@ -67,7 +67,7 @@ and replaced them with logos that I designed myself.
 
 Version 3.5 never made it into production. It lives in [Sketch](https://www.sketch.com/) and will never see the light of day. I spent a long time trying to figure out 
 what I wanted from my website and how I wanted it to look. I'm not a UI/UX designer so the site didn't look great. I had a vision for it but
- couldn't execute on it because I kept redesigning. I spent months bouncing back and forth between coding and designing that I ended up 
+ couldn't execute on it because I kept redesigning. I spent so many months bouncing back and forth between coding and designing that I ended up 
  going nowhere. Eventually I just stopped working on it. 
 
 ![My Website Version 3.5 1](/media/the-evolution-of-my-website/version-3.5-1.png)
@@ -79,7 +79,7 @@ what I wanted from my website and how I wanted it to look. I'm not a UI/UX desig
 ## Version 4.0
 
 You are looking at version 4.0. It was built in December 2019. So how did I overcome being stuck in a rut and not being happy with how 
-my website looked? It was the during holidays and I had time to reflect on why I wanted a personal website to begin with. My ultimate goal
+my website looked? It was during the holidays and I had time to reflect on why I wanted a personal website to begin with. My ultimate goal
 is to get a deeper understanding of web development by writing about what I've learned and teaching others through my content. I stopped 
 caring so much about the aesthetic of the site and focused on just getting something out that enabled me to write and publish quickly. 
 Improving the design and giving it more of my personality can happen gradually over time. 
@@ -88,6 +88,6 @@ This site is built using a template [GatsbyJS](https://www.gatsbyjs.org/) site. 
 Having most of the content publishing infrastructure already in place enabled me to quickly release posts. I'm happy with this site as it
 does look similar to the original mockups I made in v3.5. I kept the timeline but introduced two new sections. The one I'm most excited 
 about is the Today I Learned page. Here I can document and share any interesting things I've learned. The new Books page is where I can
-document what I've read each year. One of my goals this year is to read more so hopefully this will keep me accountbale. 
+document what I've read each year. One of my goals this year is to read more so hopefully this will keep me accountable. 
 
 Also, as you may have noticed, I finally learned my lesson and removed the huge cropped photo of myself. Now it's just a headshot.
