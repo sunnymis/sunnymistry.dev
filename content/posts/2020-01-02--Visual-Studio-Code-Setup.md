@@ -7,7 +7,7 @@ slug: "visual-studio-code-setup"
 tags:
   - "Development"
   - "Tools"
-description: "A breakdown of my Visual Studio Code setup, including themes, fonts, and extensions."
+description: "A breakdown of my Visual Studio Code setup, including themes, fonts, and extensions"
 socialImage: "/profile-photo.jpg"
 ---
 
