@@ -82,4 +82,8 @@ export const books2020 = [
     alt: 'The Goat by Roger Simon',
     src: '/books/the-goat.jpg',
   },
+  {
+    alt: 'The Gunslinger by Stephen King',
+    src: '/books/the-gunslinger.jpg',
+  }
 ];
