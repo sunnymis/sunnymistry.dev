@@ -25,6 +25,26 @@ export const books2017AndBefore = [
     alt: 'Doctor Sleep by Stephen King',
     src: '/books/doctor-sleep.jpg',
   },
+  {
+    alt: 'The Perks of Being a Wallflower by Stephen Chbosky',
+    src: '/books/the-perks-of-being-a-wallflower.jpg',
+  },
+  {
+    alt: 'The Curious Incident of the Dog in the Night-Time by Mark Haddon',
+    src: '/books/the-curious-incident-of-the-dog-in-the-night-time.jpg',
+  },
+  {
+    alt: 'Fahrenheit 451 by Ray Bradbury',
+    src: '/books/fahrenheit-451.jpg',
+  },
+  {
+    alt: 'The Five People You Meet in Heaven by Mitch Albom',
+    src: '/books/the-five-people-you-meet-in-heaven.jpg',
+  },
+  {
+    alt: 'A River in Darkness: One Man\'s Escape from North Korea by Masaji Ishikawa',
+    src: '/books/a-river-in-darkness.jpg',
+  },
 ];
 
 export const books2018 = [
