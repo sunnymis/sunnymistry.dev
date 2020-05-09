@@ -1,3 +1,15 @@
+---
+title: TypeScript Does Not Exist
+date: "2020-05-09"
+template: "post"
+draft: false
+slug: "typescript-does-not-exist"
+tags:
+  - "Typescript"
+description: "Typescript does not exist"
+socialImage: "/profile-photo.jpg"
+---
+
 type Color = 'black' | 'white';
 
 enum Direction {
