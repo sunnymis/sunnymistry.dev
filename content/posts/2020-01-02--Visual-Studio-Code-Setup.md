@@ -15,7 +15,7 @@ socialImage: "/profile-photo.jpg"
 
 * [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
 
-![Visual Studio Code Example Syntax](/media/vs-code-example-syntax.png)
+![Visual Studio Code Example Syntax](/media/posts/visual-studio-code-setup/vs-code-example-syntax.png)
 
 ## Font
 
@@ -23,7 +23,7 @@ socialImage: "/profile-photo.jpg"
 
 This font has programming ligatures which are multiple characters joined together. The screenshot below shows a combined arrow (=>) character and triple equal (===).
 
-![FiraCode Retina Example](/media/firacode-font-example.png)
+![FiraCode Retina Example](/media/posts/visual-studio-code-setup/firacode-font-example.png)
 
 
 ## Extensions
