@@ -105,5 +105,9 @@ export const books2020 = [
   {
     alt: 'The Gunslinger by Stephen King',
     src: '/books/the-gunslinger.jpg',
+  },
+  {
+    alt: 'The Three-Body Problem by Cixin Liu',
+    src: '/books/the-three-body-problem.jpg'
   }
 ];
