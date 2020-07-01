@@ -109,5 +109,9 @@ export const books2020 = [
   {
     alt: 'The Three-Body Problem by Cixin Liu',
     src: '/books/the-three-body-problem.jpg'
-  }
+  },
+  {
+    alt: 'The Dark Forest by Cixin Liu',
+    src: '/books/the-dark-forest.jpg'
+  },
 ];
