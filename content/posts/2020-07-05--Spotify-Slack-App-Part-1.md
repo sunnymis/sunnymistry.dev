@@ -28,7 +28,7 @@ The tech stack:
 - [Creating a Simple Server](#creating-a-simple-server)
 - [ngrok](#ngrok)
 - [Spotify](#spotify)
-  - [Initial Setup](#sub-heading-1)
+  - [Initial Setup](#initial-setup)
   - [Creating a Redirect URI](#creating-a-redirect-uri)
   - [Authentication](#authentication)
   - [Redis](#redis)
@@ -321,17 +321,19 @@ const addSongToPlaylist = async (songs) => {
 The body of the request is a `data` object containing an array of song URIs. Then we can call this function with the songs we want to add:
 
 ```js
-try {
-  const songUri = "spotify:track:5sIx4BlfYGuZeSLF40N9GH";
+app.post("/playlist", () => {
+  try {
+    const songUri = "spotify:track:5sIx4BlfYGuZeSLF40N9GH";
 
-  const response = await addSongToPlaylist([songUri]);
+    const response = await addSongToPlaylist([songUri]);
 
-  res.send(`Successfully added song`);
-} catch (error) {
-  console.log("Error adding song: ", error);
+    res.send(`Successfully added song`);
+  } catch (error) {
+    console.log("Error adding song: ", error);
 
-  res.status(500).send("Error adding song");
-}
+    res.status(500).send("Error adding song");
+  }
+}));
 ```
 
 ### Refresh Tokens
@@ -404,11 +406,11 @@ const addSongToPlaylist = async (songs) => {
 };
 ```
 
-### Summary
+## Summary
 
-That's it! We can seen how we can set up a local server which gets pinged when we authenticate our Spotify account. We made requests to retrieve access tokens and use those tokens in requests to create playlists and add songs using the API. We used refresh tokens to receive new access tokens and prevent reauthenticating every hour.
+That's it! We have seen how we can set up a local server which gets pinged when we authenticate our Spotify account. We made requests to retrieve access tokens and use those tokens in requests to create playlists and add songs using the API. We used refresh tokens to receive new access tokens and prevent reauthenticating every hour.
 
-### Resources
+## Resources
 
 [Developer Dashboard](https://developer.spotify.com/dashboard/)
 
