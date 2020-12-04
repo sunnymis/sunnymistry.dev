@@ -114,4 +114,16 @@ export const books2020 = [
     alt: 'The Dark Forest by Cixin Liu',
     src: '/books/the-dark-forest.jpg'
   },
+  {
+    alt: 'Death\'s End by Cixin Liu',
+    src: '/books/deaths-end.jpg'
+  },
+  {
+    alt: 'And Then There Were None by Agatha Christie',
+    src: '/books/and-then-there-were-none.jpg'
+  },
+  {
+    alt: 'The Amulet of Samarkand by Jonathan Stroud',
+    src: '/books/the-amulet-of-samarkand.jpg'
+  },
 ];
