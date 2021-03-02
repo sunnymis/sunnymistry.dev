@@ -13,7 +13,7 @@
 </p>
 
 ## URL
-[www.sunnymistry.dev](https://www.sunnymistry.dev)
+[www.sunnymistry.com](https://www.sunnymistry.com)
 
 ## Technology
 
