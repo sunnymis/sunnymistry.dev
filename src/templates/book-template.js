@@ -6,7 +6,11 @@ import Page from '../components/Page';
 import BookList from '../components/BookList';
 import { useSiteMetadata } from '../hooks';
 import {
-  books2020, books2019, books2018, books2017AndBefore
+  books2021,
+  books2020,
+  books2019,
+  books2018,
+  books2017AndBefore,
 } from '../constants/books';
 
 const BookTemplate = ({ data }) => {
@@ -20,6 +24,9 @@ const BookTemplate = ({ data }) => {
       <Sidebar />
       <Page title="Books">
         <p style={{ fontSize: '18px' }}>A collection of notable books I've read.</p>
+
+        <h2>2021</h2>
+        <BookList books={books2021} />
 
         <h2>2020</h2>
         <BookList books={books2020} />

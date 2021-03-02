@@ -127,3 +127,14 @@ export const books2020 = [
     src: '/books/the-amulet-of-samarkand.jpg'
   },
 ];
+
+export const books2021 = [
+  {
+    alt: 'Atomic Habits by James Clear',
+    src: '/books/atomic-habits.jpg',
+  },
+  {
+    alt: 'Leviathan Wakes by James S.A. Corey',
+    src: '/books/leviathan-wakes.jpg',
+  }
+];
