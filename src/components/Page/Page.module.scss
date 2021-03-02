@@ -4,6 +4,10 @@
 .page {
   @include margin-bottom(2);
 
+  h2 {
+    font-weight: 600;
+  }
+
   &__inner {
     padding: 25px 20px;
   }
